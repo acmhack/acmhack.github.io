@@ -1,0 +1,80 @@
+body {
+  background: rgb(172,243,167) no-repeat;
+  background: linear-gradient(180deg, rgba(172,243,167,1) 0%, rgba(105,229,141,1) 50%, rgba(64,219,125,1) 100%) no-repeat;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 4rem;
+  height: 100vh;
+}
+
+nav {
+  padding-top: 1rem !important;
+}
+
+nav li {
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.75);
+  margin-left: 1rem;
+}
+
+.navbar-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li a {
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+}
+
+nav .container {
+  position: relative;
+}
+
+.navbar-nav :not(.logo) {
+  margin-top: 12px;
+  font-weight: bolder;
+}
+
+.nav-item {
+  font-size: 1.25rem;
+}
+
+#intro-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("../images/artwork.png");
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+  background-size: 65% auto;
+}
+
+.main-info {
+  text-align: right;
+  margin-left: auto;
+  padding: .5rem 1rem;
+}
+
+.main-info h1 {
+  letter-spacing: 16px;
+  margin-right: -16px;
+  font-weight: bolder;
+  font-size: 4.5rem;
+}
+
+.main-info h4 {
+  font-size: 2.5rem;
+}
+
+.register-button {
+  border-radius: 2.5rem;
+  font-weight: 100;
+  background-color: black;
+  font-size: 1.75rem;
+  padding: 0.5rem 1rem;
+}
