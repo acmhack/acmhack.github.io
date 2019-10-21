@@ -1,7 +1,7 @@
 body {
-  background: rgb(147,237,158) no-repeat;
-  background: linear-gradient(180deg, rgba(147,237,158,1) 0%, rgba(51,217,119,1) 20%, rgba(138,220,101,1) 34%, rgba(73,214,101,1) 53%, rgba(137,123,120,1) 67%, rgba(84,75,87,1) 78%, rgba(53,44,55,1) 88%, rgba(39,31,53,1) 96%) no-repeat;
   font-family: Arial, Helvetica, sans-serif;
+  background: #65e58c;
+  transition: background 0.75s ease;
 }
 
 nav {
@@ -81,7 +81,7 @@ nav .container {
   padding: 0.5rem 1rem;
 }
 
-#about-section {
+#about-section, #schedule-section, #faq-section, #sponsor-section {
   margin-top: 4rem;
   display: flex;
   margin-bottom: 4rem;
@@ -114,4 +114,75 @@ nav .container {
 .about-image img {
   width: 75%;
   margin: auto 0 auto 10%;
+}
+
+#schedule-section {
+  padding: 0 calc(15px + 0.5rem) 15px 0 !important;
+}
+
+.schedule-table {
+  width: 100%;
+  padding: 0.5rem 1rem;
+}
+
+.schedule-table td {
+  font-size: 1.5rem;
+  width: 33.33%;
+}
+
+.schedule-table td:nth-child(2) {
+  text-align: center;
+}
+
+.schedule-table td:nth-child(3) {
+  text-align: right;
+}
+
+.table-scroller {
+  display: flex;
+}
+
+.table-scroller .fa-caret-left {
+  margin-left: auto;
+}
+
+.table-scroller p {
+  font-style: italic;
+  margin: auto 1rem;
+  width: inherit;
+  font-size: 1.25rem;
+}
+
+.table-scroller .fa-caret-right {
+  margin-right: auto;
+}
+
+#faq-section {
+  color: white;
+}
+
+#faq-section .about-text h2 {
+  margin-bottom: 1rem;
+}
+
+.question-answer h3 {
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+.question-answer p {
+  font-size: 1.5rem;
+}
+
+.question-answer h3, .question-answer p {
+  letter-spacing: 2px;
+}
+
+#sponsor-section {
+  color: white;
+}
+
+#sponsor-section .about-text {
+  width: 100%;
+  text-align: center;
 }
