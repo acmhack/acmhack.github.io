@@ -5,16 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- Custom Styles -->
-    <link rel="stylesheet" href="css/styles.css">
+
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-    <!-- for Google -->
+    <link href="https://use.typekit.net/hio1tei.css" rel="stylesheet" >
+
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/767c701207.js" crossorigin="anonymous"></script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
     <meta name="description"
       content="PickHacks is a 36 hour opportunity for you to build your dreams."/>
     <meta name="keywords" content="PickHacks, hackathon, Missouri S&T, S&T, Rolla, MLH"/>
@@ -27,23 +32,21 @@
     </title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-dark navbar-expand-lg">
       <div class="container-fluid">
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
+        <a class="navbar-brand" href="https://pickhacks.io">
+          <img src="images/pickhacks-logo.png" alt="">
+        </a>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav main-nav ml-auto">
             <li class="nav-item">
               <a class="nav-link" href="#">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Schedule</a>
-            </li>
-            <li class="nav-item logo">
-              <a href="https://pickhacks.io">
-                <img src="images/pickhacks.png" width="70" height="70" alt="">
-              </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">FAQ</a>
@@ -51,117 +54,110 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Sponsors</a>
             </li>
+            <li>
+              <a id="mlh-trust-badge"  href="https://mlh.io/seasons/na-2019/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2019-season&utm_content=white" target="_blank">
+                <img src="https://s3.amazonaws.com/logged-assets/trust-badge/2020/mlh-trust-badge-2020-white.svg" alt="Major League Hacking 2019 Hackathon Season" style="width:100%">
+              </a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <div class="container-fluid slide" id="intro-section" data-background="#65e58c">
-      <div class="main-info">
-        <h1>PICKHACKS</h1>
-        <h4>April 3-5, 2020</h4>
-        <h4>Gale Bullman Center</h4>
-        <h4>Rolla, MO</h4>
-        <button class="btn btn-dark register-button">register now</button>
-      </div>
-    </div>
-
-    <div class="container-fluid slide" id="about-section" data-background="#77da65">
-      <div class="about-text">
-        <h2>THIS IS PICKHACKS.</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-      </div>
-      <div class="about-image">
-        <img src="images/mole1.png"/>
-      </div>
-    </div>
-
-    <div class="container-fluid slide" id="schedule-section" data-background="#38d45f">
-      <div class="about-image">
-          <img src="images/mole1.png"/>
-      </div>
-      <div class="about-text">
-        <h2>SCHEDULE</h2>
-        <table class="schedule-table">
-          <tbody>
-            <tr>
-              <td>12:00 AM</td>
-              <td>Event 1</td>
-              <td>Location 1</td>
-            </tr>
-            <tr>
-              <td>12:00 AM</td>
-              <td>Event 1</td>
-              <td>Location 1</td>
-            </tr>
-            <tr>
-              <td>12:00 AM</td>
-              <td>Event 1</td>
-              <td>Location 1</td>
-            </tr>
-            <tr>
-              <td>12:00 AM</td>
-              <td>Event 1</td>
-              <td>Location 1</td>
-            </tr>
-            <tr>
-              <td>12:00 AM</td>
-              <td>Event 1</td>
-              <td>Location 1</td>
-            </tr>
-            <tr>
-              <td>12:00 AM</td>
-              <td>Event 1</td>
-              <td>Location 1</td>
-            </tr>
-          </tbody>
-        </table>
-        <div class="table-scroller">
-            <i class="fas fa-caret-left fa-3x"></i>
-            <p>Friday, April 3</p>
-            <i class="fas fa-caret-right fa-3x"></i>
+    <div class="container-fluid" id="page-top">
+      <div class="landing-page-info">
+        <h4>PickHacks presents</h4>
+        <h1>FESTIVAL</h1>
+        <div class="artpiece-border">
+          <img src="images/artpiece.gif">
+        </div>
+        <div class="landing-page-about">
+          <h4>Missouri University of Science and Technology</h4>
+          <h4>April 3-5, 2020</h4>
+        </div>
+        <div class="button-container">
+          <a href="#">APPLY</a>
         </div>
       </div>
     </div>
 
-    <div class="container-fluid slide" id="faq-section" data-background="#6c6067">
-      <div class="about-text">
-        <h2>FAQ</h2>
-        <div class="questions">
-          <div class="question-answer">
-            <h3 class="question">
-              What's a hackathon?
-            </h3>
-            <p>
-              A thon that you hack in.
-            </p>
-          </div>
-          <div class="question-answer">
-            <h3 class="question">
-              What's a hackathon?
-            </h3>
-            <p>
-              A thon that you hack in.
-            </p>
-          </div>
-          <div class="question-answer">
-            <h3 class="question">
-              What's a hackathon?
-            </h3>
-            <p>
-              A thon that you hack in.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="about-image">
-        <img src="images/mole1.png"/>
+    <div class="container-fluid" id="about">
+      <div class="about-info">
+        <h1 class="section-title">About</h1>
+        <img class="line" src="images/line.gif">
+        <img src="images/about-image.png">
+        <img class="line" src="images/line.gif">
       </div>
     </div>
 
-    <div class="container-fluid slide" id="sponsor-section" data-background="#372d36">
-      <div class="about-text">
-        <h2>SPONSORS</h2>
+    <div id="schedule">
+      <div class="schedule-info">
+        <h1 class="section-title">Schedule</h1>
+        <div class="schedule-slider">
+          <div class="album" id="day1">
+            <div class="album-cover">
+              <img src="images/vinyl.gif">
+            </div>
+          </div>
+          <div class="album" id="day2">
+            <div class="album-cover">
+              <img src="images/vinyl.gif">
+            </div>
+          </div>
+          <div class="album" id="day3">
+            <div class="album-cover">
+              <img src="images/vinyl.gif">
+            </div>
+          </div>
+        </div>
+        <div class="controls">
+          <i onclick="schedulePrev();" class="fas fa-caret-left"></i>
+          <i onclick="scheduleNext();" class="fas fa-caret-right"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" id="faq">
+      <div class="faq-info">
+        <h1 class="section-title">FAQ</h1>
+        <div class="faq-questions">
+          <div class="faq-question">
+            <h1>What</h1>
+            <div class="faq-short-answer">
+              <h1>Hackathon</h1>
+            </div>
+          </div>
+          <div class="faq-question">
+            <h1>When</h1>
+            <div class="faq-short-answer">
+              <h1>Hackathon</h1>
+            </div>
+          </div>
+          <div class="faq-question">
+            <h1>Where</h1>
+            <div class="faq-short-answer">
+              <h1>Hackathon</h1>
+            </div>
+          </div>
+          <div class="faq-question">
+            <h1>Who</h1>
+            <div class="faq-short-answer">
+              <h1>Hackathon</h1>
+            </div>
+          </div>
+          <div class="faq-question">
+            <h1>Theme</h1>
+            <div class="faq-short-answer">
+              <h1>Hackathon</h1>
+            </div>
+          </div>
+          <div class="faq-question">
+            <h1>Reimburse</h1>
+            <div class="faq-short-answer">
+              <h1>Hackathon</h1>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 

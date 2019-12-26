@@ -1,188 +1,272 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #65e58c;
-  transition: background 0.75s ease;
+  background: #171717;
+  color: white;
+  overflow-x: hidden;
 }
 
-nav {
-  padding-top: 1rem !important;
+nav.navbar div,
+nav.navbar .container-fluid,
+nav.navbar .container-fluid .collapse,
+nav.navbar .container-fluid .collapse .navbar-nav,
+nav.navbar .container-fluid .navbar-brand,
+.social-nav li a {
+  height: 100%;
 }
 
-nav li {
-  text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.75);
-  margin-left: 1rem;
-}
-
-.navbar-nav {
+nav.navbar {
+  height: 5rem;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-nav li a {
-  color: rgba(0, 0, 0, 0.75);
-}
-
-.navbar {
-  width: 100%;
-}
-
-nav .container {
-  position: relative;
-}
-
-.navbar-nav :not(.logo) {
-  margin-top: 12px;
-  font-weight: bolder;
+  padding: 1rem 0;
+  position: fixed;
+  z-index: 2;
 }
 
 .nav-item {
-  font-size: 1.25rem;
-}
-
-.nav-item:first-child {
-  margin-left: 0;
-}
-
-#intro-section {
-  height: 100vh;
   display: flex;
-  align-items: center;
-  background-image: url("../images/artwork.png");
-  background-repeat: no-repeat;
-  background-position: 0% 100%;
-  background-size: 65% auto;
-  margin-top: -6.625rem;
+  font-family: titling-gothic-fb, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.15rem;
 }
 
-.main-info {
-  text-align: right;
-  margin-left: auto;
-  padding: .5rem 1rem;
-}
-
-.main-info h1 {
-  letter-spacing: 16px;
-  margin-right: -16px;
-  font-weight: bolder;
-  font-size: 4.5rem;
-}
-
-.main-info h4 {
-  font-size: 2.5rem;
-}
-
-.register-button {
-  border-radius: 2.5rem;
-  font-weight: 100;
-  background-color: black;
-  font-size: 1.75rem;
-  padding: 0.5rem 1rem;
-}
-
-#about-section, #schedule-section, #faq-section, #sponsor-section {
-  margin-top: 4rem;
-  display: flex;
-  margin-bottom: 4rem;
-}
-
-.about-text {
-  width: 60%;
-  padding: 0 0 0 1rem;
+.nav-link {
   margin: auto 0;
+  color: white !important;
 }
 
-.about-text h2 {
-  font-size: 2.75rem;
-  letter-spacing: 10px;
-  font-weight: bolder;
+.main-nav .nav-link {
+  margin: auto 0.25rem;
 }
 
-.about-text p {
-  width: 75%;
+.navbar-brand img {
+  height: 100%;
+  width: auto;
+}
+
+.navbar-brand {
+  order: -1;
+}
+
+.navbar-nav li:last-child {
+  margin-top: -1rem;
+}
+
+.section-title {
+  font-size: 3rem;
+  font-family: titling-gothic-fb-wide, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+#page-top {
+  display: flex;
+  height: 100vh;
+}
+
+#about, #schedule, #faq {
+  display: flex;
+}
+
+.landing-page-info {
+  margin: auto;
+  text-align: left;
+}
+
+.landing-page-info h4 {
+  font-family: titling-gothic-fb, sans-serif;
+  font-weight: 200;
+  margin: 0;
+}
+
+.landing-page-info h1 {
+  font-family: titling-gothic-fb-wide, sans-serif;
+  font-size: 3rem;
+  margin-left: -3px;
+}
+
+.landing-page-info .artpiece-border {
+  background-color: #201F1F;
+  border-radius: 15px;
+  padding: 0.7rem;
+}
+
+.landing-page-info .landing-page-about {
+  text-align: right;
+}
+
+.button-container {
+  width: 100%;
+  display: flex;
+}
+
+.landing-page-info a {
   font-size: 1.5rem;
-  font-weight: lighter;
-  margin-top: 1.25rem;
+  padding: 10px 55px;
+  background-color: #201F1F;
+  font-family: titling-gothic-fb, sans-serif;
+  font-weight: 500;
+  border-radius: 50px;
+  color: white;
+  margin: 1rem auto 0 auto;
+  transition: all 0.2s linear;
 }
 
-.about-image {
+.landing-page-info a:hover {
+  text-decoration: none;
+}
+
+.about-info {
+  margin: 2rem auto 0 auto;
   display: flex;
   flex-direction: column;
 }
 
-.about-image img {
-  width: 75%;
-  margin: auto 0 auto 10%;
+.line {
+  margin: 0.75rem -20px;
 }
 
-#schedule-section {
-  padding: 0 calc(15px + 0.5rem) 15px 0 !important;
-}
-
-.schedule-table {
-  width: 100%;
-  padding: 0.5rem 1rem;
-}
-
-.schedule-table td {
-  font-size: 1.5rem;
-  width: 33.33%;
-}
-
-.schedule-table td:nth-child(2) {
-  text-align: center;
-}
-
-.schedule-table td:nth-child(3) {
-  text-align: right;
-}
-
-.table-scroller {
+.schedule-info {
+  margin: 4rem auto 0 auto;
   display: flex;
-}
-
-.table-scroller .fa-caret-left {
-  margin-left: auto;
-}
-
-.table-scroller p {
-  font-style: italic;
-  margin: auto 1rem;
-  width: inherit;
-  font-size: 1.25rem;
-}
-
-.table-scroller .fa-caret-right {
-  margin-right: auto;
-}
-
-#faq-section {
-  color: white;
-}
-
-#faq-section .about-text h2 {
-  margin-bottom: 1rem;
-}
-
-.question-answer h3 {
-  font-weight: bolder;
-  font-size: 1.5rem;
-}
-
-.question-answer p {
-  font-size: 1.5rem;
-}
-
-.question-answer h3, .question-answer p {
-  letter-spacing: 2px;
-}
-
-#sponsor-section {
-  color: white;
-}
-
-#sponsor-section .about-text {
+  flex-direction: column;
   width: 100%;
-  text-align: center;
+}
+
+.schedule-slider {
+  white-space: nowrap;
+  width: fit-content;
+  margin-left: calc(50% + 83.125px);
+  transform: translateX(-50%);
+  font-size: 0px;
+  transition: all 0.3s ease;
+}
+
+.album {
+  display: inline-block;
+  margin: 0 131.25px;
+}
+
+.album-cover {
+  width: 350px;
+  height: 350px;
+  background-color: black;
+  border-radius: 15px;
+  position: relative;
+}
+
+.album-cover img {
+  width: 95%;
+  height: 95%;
+  position: relative;
+  z-index: -1;
+  left: -47.5%;
+  top: 2.5%;
+}
+
+.controls {
+  width: 100%;
+  display: flex;
+  margin-top: 3rem;
+}
+
+.controls i {
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.controls i:first-child {
+  margin-left: auto;
+  margin-right: 1rem;
+}
+
+.controls i:last-child {
+  margin-right: auto;
+  margin-left: 1rem;
+}
+
+.faq-info {
+  margin: 4rem auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.faq-questions {
+  width: 640px;
+  margin: auto;
+}
+
+.faq-question {
+  background-color: rgba(27, 27, 27, 0.5);
+  border-radius: 5px;
+  padding: 0.5rem 2rem;
+  position: relative;
+  color: #A0A0A0;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.faq-question:nth-child(n+2) {
+  margin: 0.75rem 0;
+}
+
+.faq-question h1 {
+  font-family: titling-gothic-fb, sans-serif;
+  margin: 0;
+  font-size: 2.25rem;
+}
+
+.faq-short-answer {
+  width: 50%;
+  height: 100%;
+  background-color: #AAAEB0;
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0.5rem 2rem;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.faq-short-answer::after {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -12%;
+  z-index: -1;
+  background: inherit;
+  transform-origin: bottom left;
+  -ms-transform: skew(-30deg, 0deg);
+  -webkit-transform: skew(-30deg, 0deg);
+  transform: skew(-30deg, 0deg);
+}
+
+.faq-short-answer h1 {
+  color: #252525;
+  margin: auto;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 991px) {
+  nav .main-nav {
+    display: flex;
+  }
+
+  nav .main-nav li {
+    margin: 0.25rem auto;
+  }
+
+  nav.navbar .container-fluid .collapse {
+    height: auto;
+  }
+
+  nav.navbar .navbar-toggler,
+  nav.navbar .navbar-brand {
+    margin: 0 0 1.5rem 0;
+  }
 }
