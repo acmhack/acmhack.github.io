@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Gotham-Medium';
+  src: url('../font/Gotham-Medium/Gotham-Medium.eot?#iefix') format('embedded-opentype'),  url('../font/Gotham-Medium/Gotham-Medium.otf')  format('opentype'),
+	     url('../font/Gotham-Medium/Gotham-Medium.woff') format('woff'), url('../font/Gotham-Medium/Gotham-Medium.ttf')  format('truetype'), url('../font/Gotham-Medium/Gotham-Medium.svg#Gotham-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   background: #171717;
   color: white;
@@ -64,7 +72,7 @@ nav.navbar {
   height: 100vh;
 }
 
-#about, #schedule, #faq {
+#about, #schedule, #faq, #cast {
   display: flex;
 }
 
@@ -100,7 +108,7 @@ nav.navbar {
   display: flex;
 }
 
-.landing-page-info a {
+.landing-page-info a, .cast-info a {
   font-size: 1.5rem;
   padding: 10px 55px;
   background-color: #201F1F;
@@ -112,7 +120,7 @@ nav.navbar {
   transition: all 0.2s linear;
 }
 
-.landing-page-info a:hover {
+.landing-page-info a:hover, .cast-info a:hover {
   text-decoration: none;
 }
 
@@ -250,6 +258,89 @@ nav.navbar {
   color: #252525;
   margin: auto;
   font-size: 1.5rem;
+}
+
+.sponsor-info {
+  margin: 4rem auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.cast-info {
+  margin: 4rem auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+
+.cast-info hr {
+  background-color: white;
+  border-radius: 15px;
+  border: 2px solid white;
+  width: 150px;
+}
+
+.cast-info h1 {
+  font-size: 2.25rem;
+  font-family: titling-gothic-fb, sans-serif;
+  font-weight: 500;
+  margin-top: 1.5rem;
+}
+
+.cast-titles-members {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.titles {
+  text-align: left;
+  margin-right: 4rem;
+  margin-left: auto;
+}
+
+.titles h3 {
+  font-size: 1.25rem;
+  font-family: 'Gotham-Medium', sans-serif;
+  font-weight: 500;
+}
+
+.members {
+  text-align: right;
+  margin-right: auto;
+}
+
+.members h3 {
+  font-size: 1.25rem;
+  font-family: titling-gothic-fb, sans-serif;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+#cast .button-container a {
+  margin-top: 1.5rem;
+}
+
+.social {
+  height: 30px;
+  margin-top: 2.25rem;
+}
+
+.social img {
+  height: 100%;
+  width: auto;
+  margin: 0 1rem;
+}
+
+.footer-text {
+  margin-top: 2.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-text h5 {
+  font-size: 1.125rem;
+  font-family: titling-gothic-fb, sans-serif;
 }
 
 @media (max-width: 991px) {
