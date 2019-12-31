@@ -10,6 +10,7 @@ body {
   background: #171717;
   color: white;
   overflow-x: hidden;
+  position: relative;
 }
 
 nav.navbar div,
@@ -59,6 +60,58 @@ nav.navbar {
   margin-top: -1rem;
 }
 
+.navbar-nav a {
+  position: relative;
+}
+
+.navbar-nav a[href="#about"].active::after {
+  content: ""; 
+  float: left; 
+  background: #FEFE5E; 
+  width: calc(100% - 1rem); 
+  height: 3px; 
+  border-radius: 3px;
+  position: absolute;
+  left: 0.5rem;
+  bottom: 0.25rem;
+}
+
+.navbar-nav a[href="#schedule"].active::after {
+  content: ""; 
+  float: left; 
+  background: #E43883; 
+  width: calc(100% - 1rem); 
+  height: 3px; 
+  border-radius: 3px;
+  position: absolute;
+  left: 0.5rem;
+  bottom: 0.25rem;
+}
+
+.navbar-nav a[href="#faq"].active::after {
+  content: ""; 
+  float: left; 
+  background: #40ABD7; 
+  width: calc(100% - 1rem); 
+  height: 3px; 
+  border-radius: 3px;
+  position: absolute;
+  left: 0.5rem;
+  bottom: 0.25rem;
+}
+
+.navbar-nav a[href="#sponsors"].active::after {
+  content: ""; 
+  float: left; 
+  background: #FFFFFF; 
+  width: calc(100% - 1rem); 
+  height: 3px; 
+  border-radius: 3px;
+  position: absolute;
+  left: 0.5rem;
+  bottom: 0.25rem;
+}
+
 .section-title {
   font-size: 3rem;
   font-family: titling-gothic-fb-wide, sans-serif;
@@ -72,7 +125,7 @@ nav.navbar {
   height: 100vh;
 }
 
-#about, #schedule, #faq, #cast {
+#about, #schedule, #faq, #cast, #sponsors {
   display: flex;
 }
 
@@ -125,7 +178,7 @@ nav.navbar {
 }
 
 .about-info {
-  margin: 2rem auto 0 auto;
+  margin: 4rem auto 0 auto;
   display: flex;
   flex-direction: column;
 }
@@ -283,12 +336,11 @@ nav.navbar {
 .faq-long-answer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
   background: #FFFFFF;
   border-radius: 5px;
   color: black;
   font-family: 'Montserrat', sans-serif;
-  transition: all 0.2s linear;
+  transition: all 0.2s ease-out;
   padding: 0 18px;
   border: none;
   text-align: justify;

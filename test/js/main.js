@@ -25,6 +25,16 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
+$('a[href*="#"]').on('click', function(e) {
+    e.preventDefault()
+  
+    $('html, body').animate({
+        scrollTop: $($(this).attr('href')).offset().top
+      },
+      500
+    )
+  })
+
 function schedulePrev() {
     if( currentSlide != 1 ) {
         currentLeft += albumLength + 96.25;
