@@ -33,8 +33,6 @@ $('a[href*="#"]').on('click', function(e) {
         $(this).removeClass("snap");
     });
 
-    alert($($(this).attr('href')).position().top);
-  
     $('.scrollable-content').animate({
         scrollTop: $(".scrollable-content").scrollTop() + $($(this).attr('href')).position().top
       },
