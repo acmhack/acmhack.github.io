@@ -216,8 +216,8 @@ nav.navbar {
 
 .schedule-slider {
   white-space: nowrap;
-  width: fit-content;
-  margin-left: calc(50% + 83.125px);
+  display: table;
+  margin: auto auto auto calc(50% + 83.125px);
   transform: translateX(-50%);
   font-size: 0px;
   transition: all 0.3s ease;
