@@ -72,6 +72,10 @@ nav.navbar {
   margin-top: -1rem;
 }
 
+.navbar-nav li:last-child a {
+  padding-top: 0 !important;
+}
+
 .navbar-nav a {
   position: relative;
 }
@@ -391,6 +395,8 @@ nav.navbar {
   border-radius: 15px;
   border: 2px solid white;
   width: 150px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cast-info h1 {
