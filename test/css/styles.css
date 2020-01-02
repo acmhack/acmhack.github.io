@@ -9,8 +9,20 @@
 body {
   background: #171717;
   color: white;
-  overflow-x: hidden;
+  overflow: hidden;
+}
+
+.scrollable-content {
   position: relative;
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+}
+
+.snap {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
 nav.navbar div,
@@ -64,7 +76,8 @@ nav.navbar {
   position: relative;
 }
 
-.navbar-nav a[href="#about"].active::after {
+.navbar-nav a[href="#about"].active::after,
+.navbar-nav a[href="#about"]:hover::after {
   content: ""; 
   float: left; 
   background: #FEFE5E; 
@@ -76,7 +89,8 @@ nav.navbar {
   bottom: 0.25rem;
 }
 
-.navbar-nav a[href="#schedule"].active::after {
+.navbar-nav a[href="#schedule"].active::after,
+.navbar-nav a[href="#schedule"]:hover::after {
   content: ""; 
   float: left; 
   background: #E43883; 
@@ -88,7 +102,8 @@ nav.navbar {
   bottom: 0.25rem;
 }
 
-.navbar-nav a[href="#faq"].active::after {
+.navbar-nav a[href="#faq"].active::after,
+.navbar-nav a[href="#faq"]:hover::after {
   content: ""; 
   float: left; 
   background: #40ABD7; 
@@ -100,7 +115,8 @@ nav.navbar {
   bottom: 0.25rem;
 }
 
-.navbar-nav a[href="#sponsors"].active::after {
+.navbar-nav a[href="#sponsors"].active::after,
+.navbar-nav a[href="#sponsors"]:hover::after {
   content: ""; 
   float: left; 
   background: #FFFFFF; 

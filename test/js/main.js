@@ -26,14 +26,25 @@ for (i = 0; i < coll.length; i++) {
 }
 
 $('a[href*="#"]').on('click', function(e) {
-    e.preventDefault()
+    e.preventDefault();
+
+    var snaps = $(".snap");
+    snaps.each( function() {
+        $(this).removeClass("snap");
+    });
+
+    alert($($(this).attr('href')).position().top);
   
-    $('html, body').animate({
-        scrollTop: $($(this).attr('href')).offset().top
+    $('.scrollable-content').animate({
+        scrollTop: $(".scrollable-content").scrollTop() + $($(this).attr('href')).position().top
       },
-      500
-    )
-  })
+      500,
+      function() {
+        snaps.each( function() {
+            $(this).addClass("snap");
+        });
+    });
+});
 
 function schedulePrev() {
     if( currentSlide != 1 ) {
