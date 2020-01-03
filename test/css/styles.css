@@ -12,6 +12,10 @@ body {
   overflow-x: hidden;
 }
 
+body > div {
+  transition: opacity 0.3s linear;
+}
+
 nav.navbar div,
 nav.navbar .container-fluid,
 nav.navbar .container-fluid .collapse,

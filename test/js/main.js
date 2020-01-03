@@ -2,7 +2,7 @@ const albumLength = 516.25;
 var currentSlide = 2;
 var currentLeft = parseInt($('.schedule-slider').css('margin-left'));
 
-var coll = document.getElementsByClassName("faq-question");
+var coll = $(".faq-question");
 var i;
 
 $(document).ready(function() { 
@@ -14,26 +14,27 @@ $(document).ready(function() {
     $(document).scrollsnap({
         snaps: '.snap',
         proximity: 250,
-        easing: 'easeOutBack'
+        easing: 'easeOutBack',
+        onSnap: function( snappedElement ) {
+            $('body > .active').removeClass("active");
+            $(snappedElement).addClass("active");
+            $(snappedElement).css("opacity","1");
+            const snaps = $('body > div:not(.active)');
+
+            snaps.each( function() {
+                $(this).css('opacity','0');
+            });
+        }
     });
 
     $('a[href*="#"]').on('click', function(e) {
         e.preventDefault();
-
-        // var snaps = $(".snap");
-        // snaps.each( function() {
-        //     $(this).removeClass("snap");
-        // });
     
         $('body,html').animate({
             scrollTop: $($(this).attr('href')).position().top
           },
           500,
-          function() {
-            // snaps.each( function() {
-            //     $(this).addClass("snap");
-            // });
-        });
+        );
     });
 
     for (i = 0; i < coll.length; i++) {
