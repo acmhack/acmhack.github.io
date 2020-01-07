@@ -13,7 +13,7 @@ $(document).ready(function() {
 
     $(document).scrollsnap({
         snaps: '.snap',
-        proximity: 250,
+        proximity: 400,
         easing: 'easeOutBack',
         onSnap: function( snappedElement ) {
             $('body > .active').removeClass("active");
