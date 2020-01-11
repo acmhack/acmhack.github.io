@@ -21,6 +21,9 @@
     <!-- Custom Styles -->
     <link rel="stylesheet" href="css/styles.css">
 
+    <!-- Fullpage.js Styles-->
+    <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+
     <meta name="description"
       content="PickHacks is a 36 hour opportunity for you to build your dreams."/>
     <meta name="keywords" content="PickHacks, hackathon, Missouri S&T, S&T, Rolla, MLH"/>
@@ -32,7 +35,7 @@
       PickHacks 2020
     </title>
   </head>
-  <body data-spy="scroll" data-target=".navbar" data-offset="25">
+  <body>
     <nav class="navbar navbar-dark navbar-expand-lg">
       <div class="container-fluid">
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,169 +67,174 @@
         </div>
       </div>
     </nav>
-    <div class="container-fluid snap" id="page-top">
-      <div class="landing-page-info">
-        <h4>PickHacks presents</h4>
-        <h1>FESTIVAL</h1>
-        <div class="artpiece-border">
-          <img src="images/artpiece.gif">
-        </div>
-        <div class="landing-page-about">
-          <h4>Missouri University of Science and Technology</h4>
-          <h4>April 3-5, 2020</h4>
-        </div>
-        <div class="button-container">
-          <a href="#">APPLY</a>
-        </div>
-      </div>
-    </div>
 
-    <div class="container-fluid snap" id="about">
-      <div class="about-info">
-        <h1 class="section-title">About</h1>
-        <img class="line" src="images/line.gif">
-        <img src="images/about-image.png">
-        <img class="line" src="images/line.gif">
-      </div>
-    </div>
-
-    <div class="snap" id="schedule">
-      <div class="schedule-info">
-        <h1 class="section-title">Schedule</h1>
-        <div class="schedule-slider">
-          <div class="album" id="day1">
-            <div class="album-cover">
-              <img src="images/vinyl.gif">
-            </div>
+    <div id="fullpage">
+      <div class="container-fluid section" id="page-top">
+        <div class="landing-page-info">
+          <h4>PickHacks presents</h4>
+          <h1>FESTIVAL</h1>
+          <div class="artpiece-border">
+            <img src="images/artpiece.gif">
           </div>
-          <div class="album" id="day2">
-            <div class="album-cover">
-              <img src="images/vinyl.gif">
-            </div>
+          <div class="landing-page-about">
+            <h4>Missouri University of Science and Technology</h4>
+            <h4>April 3-5, 2020</h4>
           </div>
-          <div class="album" id="day3">
-            <div class="album-cover">
-              <img src="images/vinyl.gif">
-            </div>
-          </div>
-        </div>
-        <div class="controls">
-          <i onclick="schedulePrev();" class="fas fa-caret-left"></i>
-          <i onclick="scheduleNext();" class="fas fa-caret-right"></i>
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid snap" id="faq">
-      <div class="faq-info">
-        <h1 class="section-title">FAQ</h1>
-        <div class="faq-questions">
-          <div class="faq-question">
-            <h1>What</h1>
-            <div class="faq-short-answer">
-              <h1>Hackathon</h1>
-            </div>
-          </div>
-          <div class="faq-long-answer">
-            <p>Both Check In and the Mini Career Fair will begin on April 3 @ 4pm. The Opening Ceremony will start @ 6pm. Between those 2 times, buses will arrive.</p>
-          </div>
-          <div class="faq-question">
-            <h1>When</h1>
-            <div class="faq-short-answer">
-              <h1>April 3-5, 2020</h1>
-            </div>
-          </div>
-          <div class="faq-long-answer">
-            <p>Both Check In and the Mini Career Fair will begin on April 3 @ 4pm. The Opening Ceremony will start @ 6pm. Between those 2 times, buses will arrive.</p>
-          </div>
-          <div class="faq-question">
-            <h1>Where</h1>
-            <div class="faq-short-answer">
-              <h1>Missouri S&T</h1>
-            </div>
-          </div>
-          <div class="faq-long-answer">
-            <p>Both Check In and the Mini Career Fair will begin on April 3 @ 4pm. The Opening Ceremony will start @ 6pm. Between those 2 times, buses will arrive.</p>
-          </div>
-          <div class="faq-question">
-            <h1>Who</h1>
-            <div class="faq-short-answer">
-              <h1>You</h1>
-            </div>
-          </div>
-          <div class="faq-long-answer">
-            <p>Both Check In and the Mini Career Fair will begin on April 3 @ 4pm. The Opening Ceremony will start @ 6pm. Between those 2 times, buses will arrive.</p>
-          </div>
-          <div class="faq-question">
-            <h1>Theme</h1>
-            <div class="faq-short-answer">
-              <h1>Entertainment</h1>
-            </div>
-          </div>
-          <div class="faq-long-answer">
-            <p>Both Check In and the Mini Career Fair will begin on April 3 @ 4pm. The Opening Ceremony will start @ 6pm. Between those 2 times, buses will arrive.</p>
-          </div>
-          <div class="faq-question">
-            <h1>Reimburse</h1>
-            <div class="faq-short-answer">
-              <h1>Yes</h1>
-            </div>
-          </div>
-          <div class="faq-long-answer">
-            <p>Both Check In and the Mini Career Fair will begin on April 3 @ 4pm. The Opening Ceremony will start @ 6pm. Between those 2 times, buses will arrive.</p>
+          <div class="button-container">
+            <a href="#">APPLY</a>
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="container-fluid snap" id="sponsors">
-      <div class="sponsor-info">
-        <h1 class="section-title">Sponsors</h1>
+  
+      <div class="container-fluid section" id="about">
+        <div class="about-info">
+          <h1 class="section-title">About</h1>
+          <img class="line" src="images/line.gif">
+          <img src="images/about-image.png">
+          <img class="line" src="images/line.gif">
+        </div>
       </div>
-    </div>
-
-    <div class="container-fluid snap" id="cast">
-      <div class="cast-info">
-        <hr>
-        <h1>Cast</h1>
-        <div class="cast-titles-members">
-          <div class="titles">
-            <h3>Co-Directors</h3>
-            <h3>Finance Lead</h3>
-            <h3>Finance Team</h3>
-            <h3>Marketing Lead</h3>
-            <h3>Marketing Team</h3>
-            <h3>Logistics Lead</h3>
-            <h3>Logistics Team</h3>
-            <h3>Development Lead</h3>
-            <h3>Development Team</h3>
-            <h3>Design Team</h3>
+  
+      <div class="section" id="schedule">
+        <div class="schedule-info">
+          <h1 class="section-title">Schedule</h1>
+          <div class="schedule-slider">
+            <div class="album" id="day1">
+              <div class="album-cover">
+                <img src="images/vinyl.gif">
+              </div>
+            </div>
+            <div class="album" id="day2">
+              <div class="album-cover">
+                <img src="images/vinyl.gif">
+              </div>
+            </div>
+            <div class="album" id="day3">
+              <div class="album-cover">
+                <img src="images/vinyl.gif">
+              </div>
+            </div>
           </div>
-          <div class="members">
-            <h3>Chris G. | Luis O.</h3>
-            <h3>Chris G.</h3>
-            <h3>Connor P. | Himnish S.</h3>
-            <h3>Luis O.</h3>
-            <h3>Annie S. | Caleb F. | Lauren S.</h3>
-            <h3>Allison C.</h3>
-            <h3>Alec M. | Bharat S. | Jose A.</h3>
-            <h3>Alan T.</h3>
-            <h3>Colton J. | Dylan B. | John A. | LanChau L.</h3>
-            <h3>Chris G. | Luis O. | Jess L. | Josie G.</h3>
+          <div class="controls">
+            <i onclick="schedulePrev();" class="fas fa-caret-left"></i>
+            <i onclick="scheduleNext();" class="fas fa-caret-right"></i>
           </div>
         </div>
-        <hr>
-        <div class="button-container">
-          <a href="#">Email Us</a>
+      </div>
+  
+      <div class="container-fluid section" id="faq">
+        <div class="faq-info">
+          <h1 class="section-title">FAQ</h1>
+          <div class="faq-questions">
+            <div class="faq-question">
+              <h1>What</h1>
+              <div class="faq-short-answer">
+                <h1>Hackathon</h1>
+              </div>
+            </div>
+            <div class="faq-long-answer">
+              <p>PickHacks is Missouri S&T's annual hackathon — an innovation competition where students come together to bring a project to life over the course of a weekend. You come up with the idea, and we provide mentors, resources, and anything else you need. Programming experience isn't necessary; the only requirement is a willingness to learn and have fun!</p>
+            </div>
+            <div class="faq-question">
+              <h1>When</h1>
+              <div class="faq-short-answer">
+                <h1>April 3-5, 2020</h1>
+              </div>
+            </div>
+            <div class="faq-long-answer">
+              <p>Friday, April 3rd to Sunday, April 5th, 2020. Opening Ceremony will begin around 6 PM on Friday, and Closing Ceremonies will begin at 3 PM Sunday.</p>
+            </div>
+            <div class="faq-question">
+              <h1>Where</h1>
+              <div class="faq-short-answer">
+                <h1>Missouri S&T</h1>
+              </div>
+            </div>
+            <div class="faq-long-answer" style="text-align: center;">
+              <p>Gale Bullman Center, located on the Missouri S&T campus.<br>
+                *Gale Bullman Multi-Purpose Building*<br>
+                *705 W. 10th St., Rolla, MO, 65409*</p>
+            </div>
+            <div class="faq-question">
+              <h1>Who</h1>
+              <div class="faq-short-answer">
+                <h1>You</h1>
+              </div>
+            </div>
+            <div class="faq-long-answer">
+              <p>Anyone currently enrolled in an educational institution (high school and above) is able to attend. High school students do not need a chaperone.</p>
+            </div>
+            <div class="faq-question">
+              <h1>Theme</h1>
+              <div class="faq-short-answer">
+                <h1>Entertainment</h1>
+              </div>
+            </div>
+            <div class="faq-long-answer">
+              <p>This year, our theme is "festival", a homage to the entertainment industry and the communities behind it. There will be specific prize tracks surrounding this theme, which will be released at the beginning of the event.</p>
+            </div>
+            <div class="faq-question">
+              <h1>Reimburse</h1>
+              <div class="faq-short-answer">
+                <h1>Yes</h1>
+              </div>
+            </div>
+            <div class="faq-long-answer">
+              <p>Buses will be provided for nearby schools with seating available on a first-come, first-serve basis. Gas reimbursement will be provided at a rate of $0.27/mi. Flights will not be reimbursed this year.</p>
+            </div>
+          </div>
         </div>
-        <div class="social">
-          <img src="images/facebook-logo.png">
-          <img src="images/instagram-logo.png">
-          <img src="images/twitter-logo.png">
+      </div>
+  
+      <div class="container-fluid section" id="sponsors">
+        <div class="sponsor-info">
+          <h1 class="section-title">Sponsors</h1>
         </div>
-        <div class="footer-text">
-          <h5>Code of Conduct</h5>
-          <h5>Copyright @ PickHacks 2020</h5>
+      </div>
+  
+      <div class="container-fluid section" id="cast">
+        <div class="cast-info">
+          <hr>
+          <h1>Cast</h1>
+          <div class="cast-titles-members">
+            <div class="titles">
+              <h3>Co-Directors</h3>
+              <h3>Finance Lead</h3>
+              <h3>Finance Team</h3>
+              <h3>Marketing Lead</h3>
+              <h3>Marketing Team</h3>
+              <h3>Logistics Lead</h3>
+              <h3>Logistics Team</h3>
+              <h3>Development Lead</h3>
+              <h3>Development Team</h3>
+              <h3>Design Team</h3>
+            </div>
+            <div class="members">
+              <h3>Chris G. | Luis O.</h3>
+              <h3>Chris G.</h3>
+              <h3>Connor P. | Himnish S.</h3>
+              <h3>Luis O.</h3>
+              <h3>Annie S. | Caleb F. | Lauren S.</h3>
+              <h3>Allison C.</h3>
+              <h3>Alec M. | Bharat S. | Jose A.</h3>
+              <h3>Alan T.</h3>
+              <h3>Colton J. | Dylan B. | John A. | LanChau L.</h3>
+              <h3>Chris G. | Luis O. | Jess L. | Josie G.</h3>
+            </div>
+          </div>
+          <hr>
+          <div class="button-container">
+            <a href="#">Email Us</a>
+          </div>
+          <div class="social">
+            <img src="images/facebook-logo.png">
+            <img src="images/instagram-logo.png">
+            <img src="images/twitter-logo.png">
+          </div>
+          <div class="footer-text">
+            <h5>Code of Conduct</h5>
+            <h5>Copyright @ PickHacks 2020</h5>
+          </div>
         </div>
       </div>
     </div>
@@ -235,9 +243,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="js/scrollie.js"></script>
-    <script src="js/jquery.scrollstop.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/jquery.scrollsnap.js"></script>
+    <script type="text/javascript" src="js/scrolloverflow.min.js"></script>
+    <script type="text/javascript" src="js/fullpage.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

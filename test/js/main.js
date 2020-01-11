@@ -11,21 +11,25 @@ $(document).ready(function() {
         currentLeft = parseInt($('.schedule-slider').css('margin-left'));
     });
 
-    $(document).scrollsnap({
-        snaps: '.snap',
-        proximity: 400,
-        easing: 'easeOutBack',
-        onSnap: function( snappedElement ) {
-            $('body > .active').removeClass("active");
-            $(snappedElement).addClass("active");
-            $(snappedElement).css("opacity","1");
-            const snaps = $('body > div:not(.active)');
-
-            snaps.each( function() {
-                $(this).css('opacity','0');
+    $('#fullpage').fullpage({
+		//options here
+        autoScrolling: true,
+        scrollOverflow: true,
+        afterLoad: function(section, origin, destination, direction) {
+            $('#fullpage > *').each((index, element) => {
+                $(element).css('opacity', 0);
             });
+
+            $('.fp-section.active').css('opacity', 1);
+        },
+        onLeave: function( origin, destination, direction) {
+            $(".navbar-nav li a").each((index, element) => {
+                $(element).removeClass('active');
+            });
+
+            $("a[href='#" + destination.item.id + "']").addClass('active');
         }
-    });
+	});
 
     $('a[href*="#"]').on('click', function(e) {
         e.preventDefault();
