@@ -1,4 +1,24 @@
 const albumLength = 516.25;
+const linkedInMap = {
+    "Chris G.": "https://www.linkedin.com/in/christopherlgu/",
+    "Luis O.": "https://www.linkedin.com/in/luismocampo/",
+    "Connor P.": "https://www.linkedin.com/in/connor-pautz/",
+    "Himnish S.": "https://www.linkedin.com/in/himnish-sapkota-5b3446179/",
+    "Annie S.": "https://www.linkedin.com/in/anne-simpson-b2426a140/",
+    "Caleb F.": "https://www.linkedin.com/in/caleb-furnas/",
+    "Lauren S.": "https://www.linkedin.com/in/laurenschmidt26/",
+    "Allison C.": "https://www.linkedin.com/in/allison-n-chan/",
+    "Alec M.": "https://www.linkedin.com/in/alec-mcdaniel/",
+    "Bharat S.": "https://www.linkedin.com/in/bharat-sreekrishnavilas-646283193/",
+    "Jose A.": "https://www.linkedin.com/in/jmalega/",
+    "Alan T.": "https://www.linkedin.com/in/alan-truong-b5411814b/",
+    "Colton J.": "https://www.linkedin.com/in/colton-jacobson-ab7b47163/",
+    "Dylan B.": "https://www.linkedin.com/in/dylan-burr-0842a414b/",
+    "John A.": "https://www.linkedin.com/in/johnadamse/",
+    "LanChau L.": "https://www.linkedin.com/in/lanchauletran/",
+    "Jess L.": "https://www.linkedin.com/in/jessicatlam/",
+    "Josie G.": "https://www.linkedin.com/in/josie-glassman-a36516183/"
+};
 var currentSlide = 2;
 var currentLeft = parseInt($('.schedule-slider').css('margin-left'));
 

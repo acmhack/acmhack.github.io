@@ -189,7 +189,7 @@ nav.navbar {
   display: flex;
 }
 
-.landing-page-info a, .cast-info a {
+.landing-page-info a, .cast-info .button-container a {
   font-size: 1.5rem;
   padding: 10px 55px;
   background-color: #201F1F;
@@ -199,6 +199,10 @@ nav.navbar {
   color: white;
   margin: 1rem auto 0 auto;
   transition: all 0.3s linear;
+}
+
+.cast-info .members a {
+  color: inherit;
 }
 
 .landing-page-info a:hover, .cast-info a:hover {
