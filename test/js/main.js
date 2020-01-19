@@ -36,6 +36,7 @@ $(document).ready(function() {
         autoScrolling: true,
         scrollOverflow: true,
         normalScrollElements: '.faq-questions',
+        paddingTop: '80px',
         afterLoad: function(section, origin, destination, direction) {
             $('#fullpage > *').each((index, element) => {
                 $(element).css('opacity', 0);

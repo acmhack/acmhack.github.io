@@ -24,21 +24,14 @@ body > div {
   transition: all 0.3s linear;
 }
 
-nav.navbar div,
-nav.navbar .container-fluid,
-nav.navbar .container-fluid .collapse,
-nav.navbar .container-fluid .collapse .navbar-nav,
-nav.navbar .container-fluid .navbar-brand,
-.social-nav li a {
-  height: 100%;
+nav.navbar {
+  width: 100%;
+  z-index: 2;
+  background-color: #171717;
 }
 
-nav.navbar {
-  height: 5rem;
-  width: 100%;
-  padding: 1rem 0;
-  position: fixed;
-  z-index: 2;
+nav.navbar .container-fluid {
+  padding: 0.5rem 0;
 }
 
 .nav-item {
@@ -58,21 +51,19 @@ nav.navbar {
   margin: auto 0.25rem;
 }
 
-.navbar-brand img {
-  height: 100%;
-  width: auto;
-}
-
 .navbar-brand {
   order: -1;
 }
 
-.navbar-nav li:last-child {
-  margin-top: -1rem;
+.mlh {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 1rem;
 }
 
-.navbar-nav li:last-child a {
-  padding-top: 0 !important;
+.navbar-nav {
+  margin-right: 100px;
 }
 
 .navbar-nav a {
@@ -176,6 +167,10 @@ nav.navbar {
   padding: 0.7rem;
 }
 
+.artpiece-border img {
+  max-width: 100%;
+}
+
 .landing-page-info .landing-page-about {
   text-align: right;
 }
@@ -198,6 +193,7 @@ nav.navbar {
   border-radius: 50px;
   color: white;
   margin: 1rem auto 0 auto;
+  text-decoration: none;
   transition: all 0.3s linear;
 }
 
@@ -205,8 +201,9 @@ nav.navbar {
   color: inherit;
 }
 
-.landing-page-info a:hover, .cast-info a:hover {
-  text-decoration: none;
+.landing-page-info a:hover, .cast-info .button-container a:hover {
+  background-color: white;
+  color: #201F1F;
 }
 
 .about-info {
@@ -214,8 +211,12 @@ nav.navbar {
   flex-direction: column;
 }
 
-.line {
-  margin: 0.75rem -20px;
+.about-info img {
+  max-width: 100%;
+}
+
+.about-info .line {
+  margin: 0.75rem 0;
 }
 
 .line:nth-child(2) {
@@ -283,7 +284,7 @@ nav.navbar {
 }
 
 .faq-questions {
-  width: 640px;
+  max-width: 640px;
   margin: auto;
   max-height: 422px;
   overflow-y: scroll;
@@ -350,7 +351,7 @@ nav.navbar {
   width: 100%;
   height: 100%;
   top: 0;
-  left: -12%;
+  left: -2.33rem;
   z-index: -1;
   background-color: #AAAEB0;
   transform-origin: bottom left;
@@ -396,6 +397,10 @@ nav.navbar {
   margin-bottom: 0;
 }
 
+#sponsors .fp-tableCell {
+  width: 100%;
+}
+
 .sponsor-info {
   width: 100%;
 }
@@ -406,6 +411,7 @@ nav.navbar {
   flex-direction: column;
   width: 100%;
   text-align: center;
+  padding-bottom: 5rem;
 }
 
 .cast-info hr {
@@ -494,5 +500,9 @@ nav.navbar {
   nav.navbar .navbar-toggler,
   nav.navbar .navbar-brand {
     margin: 0 0 1.5rem 0;
+  }
+
+  .navbar-brand {
+    display: none;
   }
 }
