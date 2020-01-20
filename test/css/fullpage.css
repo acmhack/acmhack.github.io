@@ -51,6 +51,9 @@ html.fp-enabled,
 #schedule .fp-tableCell {
     width: 100%;
 }
+#sponsors .fp-tableCell {
+    display: block;
+}
 .fp-slidesContainer {
     float: left;
     position: relative;

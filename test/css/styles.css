@@ -135,7 +135,7 @@ nav.navbar .container-fluid {
   height: 100vh !important;
 }
 
-#about, #schedule, #faq, #cast, #sponsors {
+#about, #schedule, #faq {
   display: flex;
 }
 
@@ -406,7 +406,6 @@ nav.navbar .container-fluid {
 }
 
 .cast-info {
-  margin: 4rem auto 0 auto;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -504,5 +503,144 @@ nav.navbar .container-fluid {
 
   .navbar-brand {
     display: none;
+  }
+
+  .navbar-nav {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 741px) {
+  .cast-titles-members h3 {
+    font-size: 0.9375rem;
+  }
+}
+
+@media (max-width: 606px) {
+  #page-top h4,
+  #page-top .button-container a,
+  .faq-short-answer h1,
+  .cast-info .button-container a {
+    font-size: 1.125rem;
+  }
+
+  #page-top h1,
+  .section-title {
+    font-size: 2.25rem;
+  }
+
+  .section-title {
+    margin-bottom: 2.625rem;
+  }
+
+  .faq-question > h1,
+  .cast-info h1 {
+    font-size: 1.6875rem;
+  }
+
+  .cast-info hr {
+    width: 100px;
+  }
+
+  .faq-short-answer::after {
+    left: -1.95rem;
+  }
+
+  .cast-titles-members h3 {
+    font-size: 0.75rem;
+  }
+
+  .mlh img {
+    width: 75px !important;
+  }
+
+  .footer-text h5 {
+    font-size: 0.84375rem;
+  }
+}
+
+@media (max-width: 534px) {
+  #page-top h4,
+  #page-top .button-container a,
+  .faq-short-answer h1,
+  .cast-info .button-container a {
+    font-size: 0.9rem;
+  }
+
+  #page-top h1,
+  .section-title {
+    font-size: 1.9rem;
+  }
+
+  .faq-question > h1,
+  .cast-info h1 {
+    font-size: 1.25rem;
+  }
+
+  .cast-info hr {
+    width: 75px;
+  }
+
+  .mlh img {
+    width: 60px !important;
+  }
+
+  .faq-short-answer::after {
+    left: -1.63rem
+  }
+
+  .footer-text h5 {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 482px) {
+  .cast-titles-members h3 {
+    font-size: 0.43rem;
+  }
+}
+
+@media (max-width: 430px) {
+  #page-top h4,
+  #page-top .button-container a,
+  .faq-short-answer h1,
+  .cast-info .button-container a {
+    font-size: 0.75rem;
+  }
+
+  #page-top h1,
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .faq-question > h1,
+  .cast-info h1 {
+    font-size: 1rem;
+  }
+
+  .cast-info hr {
+    width: 50px;
+  }
+
+  .mlh img {
+    width: 50px !important;
+  }
+
+  .faq-short-answer::after {
+    left: -1.44rem
+  }
+
+  .footer-text h5 {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 372px) {
+  .faq-short-answer h1 {
+    font-size: 0.5rem;
+  }
+
+  .faq-question > h1 {
+    font-size: 0.8rem;
   }
 }
