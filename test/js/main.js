@@ -37,31 +37,16 @@ $(document).ready(function() {
         scrollOverflow: true,
         normalScrollElements: '.faq-questions',
         paddingTop: '80px',
+        anchors: ['top','about-anchor','schedule-anchor','faq-anchor','sponsors-anchor'],
+        menu: '.navbar-nav',
         afterLoad: function(section, origin, destination, direction) {
             $('#fullpage > *').each((index, element) => {
                 $(element).css('opacity', 0);
             });
 
             $('.fp-section.active').css('opacity', 1);
-        },
-        onLeave: function( origin, destination, direction) {
-            $(".navbar-nav li a").each((index, element) => {
-                $(element).removeClass('active');
-            });
-
-            $("a[href='#" + destination.item.id + "']").addClass('active');
         }
 	});
-
-    $('a[href*="#"]').on('click', function(e) {
-        e.preventDefault();
-    
-        $('body,html').animate({
-            scrollTop: $($(this).attr('href')).position().top
-          },
-          500,
-        );
-    });
 
     for (i = 0; i < coll.length; i++) {
         coll[i].addEventListener("click", function() {

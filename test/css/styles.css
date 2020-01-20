@@ -70,8 +70,8 @@ nav.navbar .container-fluid {
   position: relative;
 }
 
-.navbar-nav a[href="#about"].active::after,
-.navbar-nav a[href="#about"]:hover::after {
+.navbar-nav li.active a[href="#about-anchor"]::after,
+.navbar-nav a[href="#about-anchor"]:hover::after {
   content: ""; 
   float: left; 
   background: #FEFE5E; 
@@ -83,8 +83,8 @@ nav.navbar .container-fluid {
   bottom: 0.25rem;
 }
 
-.navbar-nav a[href="#schedule"].active::after,
-.navbar-nav a[href="#schedule"]:hover::after {
+.navbar-nav li.active a[href="#schedule-anchor"]::after,
+.navbar-nav a[href="#schedule-anchor"]:hover::after {
   content: ""; 
   float: left; 
   background: #E43883; 
@@ -96,8 +96,8 @@ nav.navbar .container-fluid {
   bottom: 0.25rem;
 }
 
-.navbar-nav a[href="#faq"].active::after,
-.navbar-nav a[href="#faq"]:hover::after {
+.navbar-nav li.active a[href="#faq-anchor"]::after,
+.navbar-nav a[href="#faq-anchor"]:hover::after {
   content: ""; 
   float: left; 
   background: #40ABD7; 
@@ -109,8 +109,8 @@ nav.navbar .container-fluid {
   bottom: 0.25rem;
 }
 
-.navbar-nav a[href="#sponsors"].active::after,
-.navbar-nav a[href="#sponsors"]:hover::after {
+.navbar-nav li.active a[href="#sponsors-anchor"]::after,
+.navbar-nav a[href="#sponsors-anchor"]:hover::after {
   content: ""; 
   float: left; 
   background: #FFFFFF; 
