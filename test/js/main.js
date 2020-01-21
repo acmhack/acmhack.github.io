@@ -63,17 +63,25 @@ $(document).ready(function() {
 });
 
 function schedulePrev() {
-    if( currentSlide != 1 ) {
+    if( currentSlide !== 1 ) {
         currentLeft += albumLength + 96.25;
         $('.schedule-slider').css('margin-left', currentLeft + 'px');
         currentSlide--;
+    } else if( currentSlide === 1) {
+        currentLeft += 2 * (-albumLength - 96.25);
+        $('.schedule-slider').css('margin-left', currentLeft + 'px');
+        currentSlide = $('.album').length;
     }
 }
 
 function scheduleNext() {
-    if( currentSlide != $('.album').length ) {
+    if( currentSlide < $('.album').length ) {
         currentLeft += (-albumLength - 96.25);
         $('.schedule-slider').css('margin-left', currentLeft + 'px');
         currentSlide++;
+    } else if(currentSlide === $('.album').length) {
+        currentLeft += 2 * (albumLength + 96.25);
+        $('.schedule-slider').css('margin-left', currentLeft + 'px');
+        currentSlide = 1;
     }
 }
