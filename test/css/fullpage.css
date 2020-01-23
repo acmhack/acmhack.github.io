@@ -39,20 +39,13 @@ html.fp-enabled,
     transition: all 0.3s ease-out;
 }
 .fp-section.fp-table, .fp-slide.fp-table {
-    /* display: table; */
+    display: table;
     table-layout:fixed;
-    width: 100%;
 }
 .fp-tableCell {
-    display: flex;
-    margin: auto;
+    display: table-cell;
+    vertical-align: middle;
     height: 100%;
-}
-#schedule .fp-tableCell {
-    width: 100%;
-}
-#sponsors .fp-tableCell {
-    display: block;
 }
 .fp-slidesContainer {
     float: left;

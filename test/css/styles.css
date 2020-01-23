@@ -16,18 +16,18 @@ body > div {
   transition: opacity 0.3s linear;
 }
 
-.fp-tableCell > * {
-  margin: auto;
+#fullpage > * {
+  display: flex;
+  transition: all 0.3s linear;
 }
 
-#fullpage > * {
-  transition: all 0.3s linear;
+#fullpage > * > * {
+  margin: auto;
 }
 
 nav.navbar {
   width: 100%;
   z-index: 2;
-  background-color: #171717;
 }
 
 nav.navbar .container-fluid {
@@ -130,15 +130,6 @@ nav.navbar .container-fluid {
   margin-bottom: 3.5rem;
 }
 
-#page-top {
-  display: flex;
-  height: 100vh !important;
-}
-
-#about, #schedule, #faq {
-  display: flex;
-}
-
 .landing-page-info {
   margin: auto;
   text-align: left;
@@ -225,6 +216,7 @@ nav.navbar .container-fluid {
 
 .schedule-info {
   width: 100%;
+  margin: auto;
 }
 
 .schedule-slider {
@@ -239,6 +231,7 @@ nav.navbar .container-fluid {
 .album {
   display: inline-block;
   margin: 0 131.25px;
+  vertical-align: bottom;
 }
 
 .album-cover {
@@ -247,12 +240,24 @@ nav.navbar .container-fluid {
   background-color: black;
   border-radius: 15px;
   position: relative;
+  padding: 1rem;
+}
+
+.album-cover h2 {
+  margin-top: 0;
+  font-size: 2.25rem;
+  font-family: 'Gotham-Medium', sans-serif;
+}
+
+.album-cover p {
+  font-size: 1.15rem;
+  margin: 0;
 }
 
 .album-cover img {
   width: 95%;
   height: 95%;
-  position: relative;
+  position: absolute;
   z-index: -1;
   left: -47.5%;
   top: 2.5%;
@@ -396,6 +401,10 @@ nav.navbar .container-fluid {
   width: 100%;
 }
 
+.sponsor-cast-info {
+  margin: auto;
+}
+
 .cast-info {
   display: flex;
   flex-direction: column;
@@ -484,6 +493,10 @@ nav.navbar .container-fluid {
 
   nav .main-nav li {
     margin: 0.25rem auto;
+  }
+
+  nav.navbar {
+    background-color: #171717;
   }
 
   nav.navbar .container-fluid .collapse {

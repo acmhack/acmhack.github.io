@@ -31,15 +31,19 @@ $(document).ready(function() {
         currentLeft = parseInt($('.schedule-slider').css('margin-left'));
     });
 
+    schedulePrev();
+
     $('#fullpage').fullpage({
 		//options here
         autoScrolling: true,
         scrollOverflow: true,
         normalScrollElements: '.faq-questions',
-        paddingTop: '80px',
         anchors: ['top','about-anchor','schedule-anchor','faq-anchor','sponsors-anchor'],
         menu: '.navbar-nav',
-        afterLoad: function(section, origin, destination, direction) {
+        verticalCentered: false,
+        scrollingSpeed: 400,
+        recordHistory: false,
+        afterLoad: function(origin, destination, direction) {
             $('#fullpage > *').each((index, element) => {
                 $(element).css('opacity', 0);
             });
