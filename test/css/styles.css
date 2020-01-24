@@ -18,7 +18,7 @@ body > div {
 
 #fullpage > * {
   display: flex;
-  transition: all 0.3s linear;
+  transition: all 0.1s linear;
 }
 
 #fullpage > * > * {
@@ -204,6 +204,10 @@ nav.navbar .container-fluid {
 
 .about-info img {
   max-width: 100%;
+}
+
+.about-info video {
+  width: 100%;
 }
 
 .about-info .line {
@@ -566,6 +570,25 @@ nav.navbar .container-fluid {
   }
 }
 
+@media (max-width: 550px) {
+  .album-cover h2 {
+    font-size: 2rem;
+  }
+
+  .album-cover p {
+    font-size: 1rem;
+  }
+
+  .album-cover {
+    height: 300px;
+    width: 300px;
+  }
+
+  .schedule-slider {
+    margin: auto auto auto calc(50% + 71.25px);
+  }
+}
+
 @media (max-width: 534px) {
   #page-top h4,
   #page-top .button-container a,
@@ -604,6 +627,25 @@ nav.navbar .container-fluid {
 @media (max-width: 482px) {
   .cast-titles-members h3 {
     font-size: 0.43rem;
+  }
+}
+
+@media (max-width: 466px) {
+  .album-cover h2 {
+    font-size: 1.1rem;
+  }
+
+  .album-cover p {
+    font-size: 0.6rem;
+  }
+
+  .album-cover {
+    height: 200px;
+    width: 200px;
+  }
+
+  .schedule-slider {
+    margin: auto auto auto calc(50% + 47.5px);
   }
 }
 

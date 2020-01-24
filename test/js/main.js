@@ -1,4 +1,6 @@
-const albumLength = 516.25;
+const albumLengthLarge = 516.25;
+const albumLengthMedium = 442.5;
+const albumLengthSmall = 295;
 const linkedInMap = {
     "Chris G.": "https://www.linkedin.com/in/christopherlgu/",
     "Luis O.": "https://www.linkedin.com/in/luismocampo/",
@@ -27,7 +29,13 @@ var i;
 
 $(document).ready(function() { 
     window.addEventListener("resize", function() {
-        $('.schedule-slider').css('margin-left', 'calc(50% + 83.125px + ' + ((2 - currentSlide) * (albumLength + 96.25)) + 'px)');
+        if ($(window).width() > 550) {
+            $('.schedule-slider').css('margin-left', 'calc(50% + 83.125px + ' + ((2 - currentSlide) * (albumLengthLarge + 96.25)) + 'px)');
+        } else if ($(window).width() > 466) {
+            $('.schedule-slider').css('margin-left', 'calc(50% + 71.25px + ' + ((2 - currentSlide) * (albumLengthMedium + 119)) + 'px)');
+        } else {
+            $('.schedule-slider').css('margin-left', 'calc(50% + 47.5px + ' + ((2 - currentSlide) * (albumLengthSmall + 170)) + 'px)');
+        }
         currentLeft = parseInt($('.schedule-slider').css('margin-left'));
     });
 
@@ -41,14 +49,19 @@ $(document).ready(function() {
         anchors: ['top','about-anchor','schedule-anchor','faq-anchor','sponsors-anchor'],
         menu: '.navbar-nav',
         verticalCentered: false,
-        scrollingSpeed: 400,
+        scrollingSpeed: 700,
         recordHistory: false,
-        afterLoad: function(origin, destination, direction) {
+        onLeave: function(origin, destination, direction) {
             $('#fullpage > *').each((index, element) => {
                 $(element).css('opacity', 0);
             });
 
-            $('.fp-section.active').css('opacity', 1);
+            setTimeout(function() { 
+                $('.fp-section.active').css('opacity', 1);
+                if(destination.anchor === "about-anchor") {
+                    document.getElementById('aboutVideo').play();
+                }
+            }, 300);
         }
 	});
 
@@ -68,11 +81,23 @@ $(document).ready(function() {
 
 function schedulePrev() {
     if( currentSlide !== 1 ) {
-        currentLeft += albumLength + 96.25;
+        if($(window).width() > 550) {
+            currentLeft += albumLengthLarge + 96.25;
+        } else if ($(window).width() > 466) {
+            currentLeft += albumLengthMedium + 119;
+        } else {
+            currentLeft += albumLengthSmall + 170;
+        }
         $('.schedule-slider').css('margin-left', currentLeft + 'px');
         currentSlide--;
     } else if( currentSlide === 1) {
-        currentLeft += 2 * (-albumLength - 96.25);
+        if($(window).width() > 550) {
+            currentLeft += 2 * (-albumLengthLarge - 96.25);
+        } else if($(window).width() > 466) {
+            currentLeft += 2 * (-albumLengthMedium - 119);
+        } else {
+            currentLeft += 2 * (-albumLengthSmall - 170);
+        }
         $('.schedule-slider').css('margin-left', currentLeft + 'px');
         currentSlide = $('.album').length;
     }
@@ -80,11 +105,23 @@ function schedulePrev() {
 
 function scheduleNext() {
     if( currentSlide < $('.album').length ) {
-        currentLeft += (-albumLength - 96.25);
+        if($(window).width() > 550) {
+            currentLeft += (-albumLengthLarge - 96.25);
+        } else if($(window).width() > 466) {
+            currentLeft += (-albumLengthMedium - 119);
+        } else {
+            currentLeft += (-albumLengthSmall - 170);
+        }
         $('.schedule-slider').css('margin-left', currentLeft + 'px');
         currentSlide++;
     } else if(currentSlide === $('.album').length) {
-        currentLeft += 2 * (albumLength + 96.25);
+        if($(window).width() > 550) {
+            currentLeft += 2 * (albumLengthLarge + 96.25);
+        } else if($(window).width() > 466) {
+            currentLeft += 2 * (albumLengthMedium + 119);
+        } else {
+            currentLeft += 2 * (albumLengthSmall + 170);
+        }
         $('.schedule-slider').css('margin-left', currentLeft + 'px');
         currentSlide = 1;
     }
