@@ -156,10 +156,22 @@ nav.navbar .container-fluid {
   background-color: #201F1F;
   border-radius: 15px;
   padding: 0.7rem;
+  position: relative;
 }
 
 .artpiece-border img {
   max-width: 100%;
+}
+
+.artpiece-credits {
+  margin: 0;
+  position: absolute;
+  transform: rotate(90deg);
+  color: #7A7A7A;
+  font-family: titling-gothic-fb-wide, sans-serif;
+  font-size: 9px;
+  bottom: 9rem;
+  right: -9.2rem;
 }
 
 .landing-page-info .landing-page-about {
@@ -206,8 +218,28 @@ nav.navbar .container-fluid {
   max-width: 100%;
 }
 
+.video-container {
+  position: relative;
+  text-align: center;
+}
+
+.video-container p {
+  font-family: titling-gothic-fb, sans-serif;
+  margin: 0;
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 1rem;
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 80%;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  left: 10%;
+}
+
 .about-info video {
-  width: 100%;
+  width: 750px;
 }
 
 .about-info .line {
@@ -521,9 +553,29 @@ nav.navbar .container-fluid {
   }
 }
 
+@media (max-width: 780px) {
+  .about-info video {
+    max-width: 100%;
+  }
+
+  .overlay-text p {
+    font-size: 0.8rem;
+  }
+}
+
 @media (max-width: 741px) {
   .cast-titles-members h3 {
     font-size: 0.9375rem;
+  }
+}
+
+@media (max-width: 714px) {
+  .artpiece-border {
+    margin-right: 12.8px;
+  }
+
+  .landing-page-info .landing-page-about > * {
+    margin-right: calc(0.7rem + 12.8px);
   }
 }
 
@@ -568,6 +620,24 @@ nav.navbar .container-fluid {
   .footer-text h5 {
     font-size: 0.84375rem;
   }
+
+  .artpiece-credits {
+    font-size: 6px;
+    right: -6.15rem;
+    bottom: 6.3rem;
+  }
+
+  .artpiece-border {
+    margin-right: 10.8px;
+  }
+
+  .landing-page-info .landing-page-about > * {
+    margin-right: calc(0.7rem + 10.8px);
+  }
+
+  .overlay-text p {
+    font-size: 0.75rem;
+  }
 }
 
 @media (max-width: 550px) {
@@ -586,6 +656,10 @@ nav.navbar .container-fluid {
 
   .schedule-slider {
     margin: auto auto auto calc(50% + 71.25px);
+  }
+
+  .overlay-text p {
+    font-size: 0.5rem;
   }
 }
 
@@ -682,6 +756,24 @@ nav.navbar .container-fluid {
   .footer-text h5 {
     font-size: 0.7rem;
   }
+
+  .artpiece-credits {
+    font-size: 5px;
+    right: -5.05rem;
+    bottom: 5.4rem;
+  }
+
+  .artpiece-border {
+    margin-right: 7.2px;
+  }
+
+  .landing-page-info .landing-page-about > * {
+    margin-right: calc(0.7rem + 7.2px);
+  }
+
+  .overlay-text p {
+    font-size: 0.35rem;
+  }
 }
 
 @media (max-width: 372px) {
@@ -691,5 +783,19 @@ nav.navbar .container-fluid {
 
   .faq-question > h1 {
     font-size: 0.8rem;
+  }
+
+  .artpiece-credits {
+    font-size: 4px;
+    right: -4.05rem;
+    bottom: 4.5rem;
+  }
+
+  .artpiece-border {
+    margin-right: 5.6px;
+  }
+
+  .landing-page-info .landing-page-about > * {
+    margin-right: calc(0.7rem + 5.6px);
   }
 }
