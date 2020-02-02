@@ -477,7 +477,7 @@ nav.navbar .container-fluid {
 .titles {
   text-align: right;
   margin-right: 2rem;
-  margin-left: auto;
+  margin-left: -1rem;
 }
 
 .titles h3 {
@@ -505,6 +505,10 @@ nav.navbar .container-fluid {
 
 .members h3.lead {
   font-weight: 500;
+}
+
+.empty-h3 {
+  height: 24px;
 }
 
 .cast-titles-members .margin-top {
@@ -585,6 +589,10 @@ nav.navbar .container-fluid {
   .cast-titles-members h3 {
     font-size: 0.9375rem;
   }
+
+  .empty-h3 {
+    height: 17.6px;
+  }
 }
 
 @media (max-width: 714px) {
@@ -629,6 +637,10 @@ nav.navbar .container-fluid {
 
   .cast-titles-members h3 {
     font-size: 0.75rem;
+  }
+
+  .empty-h3 {
+    height: 14.4px;
   }
 
   .mlh img {
@@ -718,7 +730,11 @@ nav.navbar .container-fluid {
 
 @media (max-width: 482px) {
   .cast-titles-members h3 {
-    font-size: 0.43rem;
+    font-size: 0.6rem;
+  }
+
+  .empty-h3 {
+    height: 11.2px;
   }
 }
 
