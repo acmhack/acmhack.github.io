@@ -462,6 +462,7 @@ nav.navbar .container-fluid {
   font-family: titling-gothic-fb, sans-serif;
   font-weight: 500;
   margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .cast-titles-members {
@@ -469,28 +470,45 @@ nav.navbar .container-fluid {
   margin-bottom: 1.5rem;
 }
 
+.cast-titles-members > * {
+  width: 50%;
+}
+
 .titles {
-  text-align: left;
-  margin-right: 4rem;
+  text-align: right;
+  margin-right: 2rem;
   margin-left: auto;
 }
 
 .titles h3 {
   font-size: 1.25rem;
-  font-family: 'Gotham-Medium', sans-serif;
+  font-family: titling-gothic-fb, sans-serif;
   font-weight: 500;
+  text-transform: uppercase;
 }
 
 .members {
-  text-align: right;
+  text-align: left;
   margin-right: auto;
 }
 
 .members h3 {
   font-size: 1.25rem;
   font-family: titling-gothic-fb, sans-serif;
-  font-weight: 200;
+  font-weight: 100;
   text-transform: uppercase;
+}
+
+.members h3:not(.lead) {
+  opacity: 0.8;
+}
+
+.members h3.lead {
+  font-weight: 500;
+}
+
+.cast-titles-members .margin-top {
+  margin-top: 1.25rem;
 }
 
 #cast .button-container a {
