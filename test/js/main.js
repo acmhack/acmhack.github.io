@@ -51,6 +51,7 @@ $(document).ready(function() {
         verticalCentered: false,
         scrollingSpeed: 700,
         recordHistory: false,
+        paddingTop: '80px',
         onLeave: function(origin, destination, direction) {
             $('#fullpage > *').each((index, element) => {
                 $(element).css('opacity', 0);
