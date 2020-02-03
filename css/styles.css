@@ -454,6 +454,7 @@ nav.navbar .container-fluid {
 .gold .row a {
   width: 40%;
   display: flex;
+  flex-direction: column
 }
 
 .gold .row a:first-child {
@@ -479,6 +480,7 @@ nav.navbar .container-fluid {
 .silver .row a {
   width: 30%;
   display: flex;
+  flex-direction: column
 }
 
 .silver .row a:first-child {
@@ -504,6 +506,7 @@ nav.navbar .container-fluid {
 .bronze .row a {
   width: 20%;
   display: flex;
+  flex-direction: column
 }
 
 .bronze .row a:first-child {
@@ -536,6 +539,7 @@ nav.navbar .container-fluid {
   width: 40%;
   margin: 0 auto;
   display: flex;
+  flex-direction: column
 }
 
 .um .row a img {
@@ -549,6 +553,7 @@ nav.navbar .container-fluid {
 .other .row a {
   width: 20%;
   display: flex;
+  flex-direction: column
 }
 
 .other .row a:first-child {
