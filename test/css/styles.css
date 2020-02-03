@@ -580,6 +580,14 @@ nav.navbar .container-fluid {
   max-width: 100%;
 }
 
+.sponsor-info a {
+  transition: all 0.2s linear;
+}
+
+.sponsor-info a:hover {
+  transform: scale(1.1);
+}
+
 .cast-info {
   display: flex;
   flex-direction: column;
