@@ -577,7 +577,7 @@ nav.navbar .container-fluid {
 }
 
 .sponsor-info .row img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .sponsor-info a {

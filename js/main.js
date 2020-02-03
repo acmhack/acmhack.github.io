@@ -59,9 +59,6 @@ $(document).ready(function() {
 
             setTimeout(function() { 
                 $('.fp-section.active').css('opacity', 1);
-                if(destination.anchor === "about-anchor") {
-                    document.getElementById('aboutVideo').play();
-                }
             }, 300);
         }
 	});
