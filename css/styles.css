@@ -214,7 +214,7 @@ nav.navbar .container-fluid {
   flex-direction: column;
 }
 
-.about-info img {
+.about-info .video-container img {
   max-width: 100%;
 }
 
@@ -238,7 +238,7 @@ nav.navbar .container-fluid {
   left: 10%;
 }
 
-.about-info video {
+.about-info img {
   width: 750px;
 }
 
@@ -733,7 +733,7 @@ nav.navbar .container-fluid {
 }
 
 @media (max-width: 780px) {
-  .about-info video {
+  .about-info .video-container img {
     max-width: 100%;
   }
 
