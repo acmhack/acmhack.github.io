@@ -498,7 +498,7 @@ nav.navbar .container-fluid {
 }
 
 .bronze .row {
-  margin: 0 auto 1rem auto;
+  margin: 0 auto 2rem auto;
 }
 
 .bronze .row a {
@@ -526,6 +526,49 @@ nav.navbar .container-fluid {
 
 .bronze .row a:last-child img {
   margin-left: auto;
+}
+
+.um .row {
+  margin: 0 auto 2rem auto;
+}
+
+.um .row a {
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.um .row a img {
+  margin: 0 auto;
+}
+
+.other .row {
+  margin: 0 auto 2rem auto;
+}
+
+.other .row a {
+  width: 20%;
+  display: flex;
+}
+
+.other .row a:first-child {
+  margin: 0 2.5% 0 auto;
+}
+
+.other .row a:last-child {
+  margin: 0 auto 0 2.5%;
+}
+
+.other .row a:first-child img {
+  margin-left: auto;
+}
+
+.other .row a:nth-child(2) img {
+  margin: 0 auto;
+}
+
+.other .row a:last-child img {
+  margin-right: auto;
 }
 
 .sponsor-info .row {
