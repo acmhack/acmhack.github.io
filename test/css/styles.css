@@ -466,18 +466,28 @@ nav.navbar .container-fluid {
 }
 
 .cast-titles-members {
-  display: flex;
   margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
-.cast-titles-members > * {
+.team {
+  display: flex;
+  width: 100%;
+}
+
+.team > * {
   width: 50%;
+}
+
+.team:nth-child(n+2) {
+  margin-top: 1.25rem;
 }
 
 .titles {
   text-align: right;
   margin-right: 2rem;
-  margin-left: -1rem;
+  margin-left: -1.5rem;
 }
 
 .titles h3 {
