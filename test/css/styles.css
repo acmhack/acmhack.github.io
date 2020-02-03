@@ -435,10 +435,106 @@ nav.navbar .container-fluid {
 
 .sponsor-info {
   width: 100%;
+  margin: auto;
+  max-width: 1050px;
 }
 
 .sponsor-cast-info {
   margin: auto;
+}
+
+.gold {
+  margin-bottom: 4rem;
+}
+
+.gold .row {
+  margin: 0 auto;
+}
+
+.gold .row a {
+  width: 40%;
+  display: flex;
+}
+
+.gold .row a:first-child {
+  margin: 0 2% 0 auto;
+}
+
+.gold .row a:last-child {
+  margin: 0 auto 0 2%;
+}
+
+.gold .row a:first-child img {
+  margin-left: auto;
+}
+
+.silver .row {
+  margin: 0 auto 2rem auto;
+}
+
+.silver .row:last-child {
+  margin-bottom: 5.5rem;
+}
+
+.silver .row a {
+  width: 30%;
+  display: flex;
+}
+
+.silver .row a:first-child {
+  margin: 0 2.5% 0 auto;
+}
+
+.silver .row a:last-child {
+  margin: 0 auto 0 2.5%;
+}
+
+.silver .row a:nth-child(2) img {
+  margin: 0 auto;
+}
+
+.silver .row a:last-child img {
+  margin-left: auto;
+}
+
+.bronze .row {
+  margin: 0 auto 1rem auto;
+}
+
+.bronze .row a {
+  width: 20%;
+  display: flex;
+}
+
+.bronze .row a:first-child {
+  margin: 0 2.5% 0 auto;
+}
+
+.bronze .row a:nth-child(2),
+.bronze .row a:nth-child(3) {
+  margin: 0 2.5%;
+}
+
+.bronze .row a:last-child {
+  margin: 0 auto 0 2.5%;
+}
+
+.bronze .row a:nth-child(2) img,
+.bronze .row a:nth-child(3) img {
+  margin: 0 auto;
+}
+
+.bronze .row a:last-child img {
+  margin-left: auto;
+}
+
+.sponsor-info .row {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.sponsor-info .row img {
+  max-width: 100%;
 }
 
 .cast-info {
