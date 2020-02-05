@@ -789,6 +789,10 @@ nav.navbar .container-fluid {
     font-size: 1.6875rem;
   }
 
+  .faq-long-answer p {
+    font-size: 0.75rem;
+  }
+
   .cast-info hr {
     width: 100px;
   }
@@ -861,6 +865,10 @@ nav.navbar .container-fluid {
   .faq-short-answer h1,
   .cast-info .button-container a {
     font-size: 0.9rem;
+  }
+
+  .faq-long-answer p {
+    font-size: 0.7rem;
   }
 
   #page-top h1,
