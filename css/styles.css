@@ -417,7 +417,6 @@ nav.navbar .container-fluid {
   transition: all 0.3s ease-out;
   padding: 0 18px;
   border: none;
-  text-align: justify;
 }
 
 .faq-long-answer.active {
