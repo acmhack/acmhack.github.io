@@ -322,6 +322,7 @@ nav.navbar .container-fluid {
 
 .faq-info {
   width: 100%;
+  position: relative;
 }
 
 .faq-questions {
@@ -333,7 +334,7 @@ nav.navbar .container-fluid {
 }
 
 .faq-question {
-  background-color: rgba(27, 27, 27, 0.5);
+  background-color: rgba(27, 27, 27, 1);
   border-radius: 5px;
   padding: 0.5rem 2rem;
   position: relative;
@@ -426,6 +427,13 @@ nav.navbar .container-fluid {
 
 .faq-long-answer p {
   margin-bottom: 0;
+}
+
+.controller {
+  position: absolute;
+  top: calc(50% - 309px / 2 - 75px);
+  left: calc(50% - 453px / 2 - 250px);;
+  z-index: -1;
 }
 
 #sponsors .fp-tableCell {
