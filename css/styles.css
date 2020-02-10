@@ -16,12 +16,12 @@ body > div {
   transition: opacity 0.3s linear;
 }
 
-#fullpage > * {
+#fullpage > *, .fp-scroller {
   display: flex;
   transition: all 0.1s linear;
 }
 
-#fullpage > * > * {
+#fullpage > * > *, .fp-scroller > * {
   margin: auto;
 }
 
