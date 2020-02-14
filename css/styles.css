@@ -451,8 +451,27 @@ nav.navbar .container-fluid {
   margin: auto;
 }
 
+.diamond {
+  margin-bottom: 3rem;
+}
+
+.diamond .row {
+  margin: 0 auto;
+}
+
+.diamond .row a {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.diamond img {
+  margin: 0 auto;
+}
+
 .gold {
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .gold .row {
@@ -465,16 +484,8 @@ nav.navbar .container-fluid {
   flex-direction: column
 }
 
-.gold .row a:first-child {
-  margin: 0 2% 0 auto;
-}
-
-.gold .row a:last-child {
-  margin: 0 auto 0 2%;
-}
-
-.gold .row a:first-child img {
-  margin-left: auto;
+.gold .row a {
+  margin: auto;
 }
 
 .silver .row {
