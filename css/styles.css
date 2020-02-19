@@ -1021,4 +1021,8 @@ nav.navbar .container-fluid {
   .landing-page-info .landing-page-about > * {
     margin-right: calc(0.7rem + 5.6px);
   }
+
+  .landing-page-info .button-container a {
+    padding: 10px 35px;
+  }
 }
