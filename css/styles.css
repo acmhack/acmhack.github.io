@@ -18,6 +18,10 @@ body.corona {
   width: 100vw;
 }
 
+.corona .wrapper {
+  overflow: hidden;
+}
+
 body > div {
   position: absolute;
   width: 100%;
