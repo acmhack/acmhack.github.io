@@ -45,7 +45,7 @@
       PickHacks 2020
     </title>
   </head>
-  <body>
+  <body class="corona">
     <nav class="navbar fixed-top navbar-dark navbar-expand-lg">
       <div class="container-fluid">
         <button class="navbar-toggler mr-auto my-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,29 +54,41 @@
         <a class="mlh" id="mlh-trust-badge"  href="https://mlh.io/seasons/na-2020/events" target="_blank">
           <img src="https://s3.amazonaws.com/logged-assets/trust-badge/2020/mlh-trust-badge-2020-white.svg" alt="Major League Hacking 2019 Hackathon Season" style="width: 86px"/>
         </a>
-        <a class="navbar-brand" href="#top">
+        <a class="navbar-brand page-switch" href="#mainpage">
           <img src="images/pickhacks-logo.png" alt="" height="38px" width="38px"/>
         </a>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav main-nav ml-auto">
-            <li data-menuanchor="about-anchor" class="nav-item">
-              <a class="nav-link" href="#about-anchor">About</a>
+            <li class="nav-item">
+              <a class="nav-link page-switch" href="#schedulepage">Schedule</a>
             </li>
-            <li data-menuanchor="schedule-anchor" class="nav-item">
-              <a class="nav-link" href="#schedule-anchor">Schedule</a>
+            <li class="nav-item">
+              <a class="nav-link page-switch" href="#travelpage">Travel</a>
             </li>
-            <li data-menuanchor="faq-anchor" class="nav-item">
-                <a class="nav-link" href="#faq-anchor">FAQ</a>
+            <li class="nav-item">
+                <a class="nav-link page-switch" href="#prizespage">Prizes</a>
             </li>
-            <li data-menuanchor="sponsors-anchor" class="nav-item">
-              <a class="nav-link" href="#sponsors-anchor">Sponsors</a>
+            <li class="nav-item">
+              <a class="nav-link" href="https://2019.pickhacks.io">PH 2019</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <div id="fullpage">
+    <div id="corona">
+      <div>
+        <h1>Official Notice</h1>
+        <p>Dear hackers,<br><br>
+        Due to the ongoing concerns regarding coronavirus (COVID-19), we're sad to announce that we will be postponing PickHacks 2020 to the fall semester. On behalf of the entire PickHacks team, we're so thankful for all the support and interest we received for this year's event. While it's disheartening that we've had to make this decision, it's best to make sure our community is safe and that we host an enjoyable hackathon.<br><br>     
+        An official date for the Fall iteration is currently in the works, and updates will be posted as they come. Students that have purchased bus reservations will be refunded by Sunday, March 15.<br><br>        
+        While PickHacks may not be happening this Spring, always keep learning, building, and making awesome things. We can't wait to see you in the Fall.<br><br>       
+        Stay safe,<br>
+        The PickHacks Team</p>
+      </div>
+    </div>
+
+    <div id="mainpage">
       <div class="container-fluid section" id="page-top">
         <div class="landing-page-info">
           <h4>PickHacks presents</h4>
@@ -107,60 +119,6 @@
             </div>
           </div>
           <img class="line" src="images/line.gif">
-        </div>
-      </div>
-  
-      <div class="section" id="schedule">
-        <div class="schedule-info">
-          <h1 class="section-title">Schedule</h1>
-          <div class="schedule-slider">
-            <div class="album" id="day1">
-              <div class="album-cover">
-                <h2>Friday</h2>
-                <p>4:00pm - Check-in</p>
-                <p>4:00pm - Mini Career Fair</p>
-                <p>6:00pm - Opening Ceremony</p>
-                <p>7:30pm - Dinner</p>
-                <p>8:00pm - Hacking Starts</p>
-                <p>9:00pm - Workshops/Tech Talks</p>
-                <p>10:00pm - Activity</p>
-                <img src="images/vinyl.gif"/>
-              </div>
-            </div>
-            <div class="album" id="day2">
-              <div class="album-cover">
-                <h2>Saturday</h2>
-                <p>12:00am - Midnight Snack</p>
-                <p>2:00am - Activity</p>
-                <p>6:00am - Yoga</p>
-                <p>8:00am - Breakfast</p>
-                <p>11am-3pm - Workshops/Tech Talks</p>
-                <p>12:00pm - Lunch</p>
-                <p>3:00pm - Activity</p>
-                <p>6:00pm - Dinner</p>
-                <p>9:00pm - Activity</p>
-                <img src="images/vinyl.gif"/>
-              </div>
-            </div>
-            <div class="album" id="day3">
-              <div class="album-cover">
-                <h2>Sunday</h2>
-                <p>12:00am - Midnight Snack</p>
-                <p>7:00am - Breakfast</p>
-                <p>8:00am - Hacking Ends</p>
-                <p>9:00am - Workshop/Tech Talk</p>
-                <p>10:00am - Judging</p>
-                <p>12:00pm - Lunch + Dogs</p>
-                <p>1:30pm - Closing Ceremony</p>
-                <p>3:00pm - Buses Leave</p>
-                <img src="images/vinyl.gif"/>
-              </div>
-            </div>
-          </div>
-          <div class="controls">
-            <i onclick="schedulePrev();" class="fas fa-caret-left"></i>
-            <i onclick="scheduleNext();" class="fas fa-caret-right"></i>
-          </div>
         </div>
       </div>
   
@@ -514,12 +472,169 @@
       </div>
     </div>
 
+    <div id="schedulepage">
+      <div class="section" id="schedule">
+        <div class="schedule-info">
+          <h1 class="section-title">Schedule</h1>
+          <div class="schedule-slider">
+            <div class="album" id="day1">
+              <div class="album-cover">
+                <h2>Friday</h2>
+                <p>4:00pm - Check-in</p>
+                <p>4:00pm - Mini Career Fair</p>
+                <p>6:00pm - Opening Ceremony</p>
+                <p>7:30pm - Dinner</p>
+                <p>8:00pm - Hacking Starts</p>
+                <p>9:00pm - Workshops/Tech Talks</p>
+                <p>10:00pm - Activity</p>
+                <img src="images/vinyl.gif"/>
+              </div>
+            </div>
+            <div class="album" id="day2">
+              <div class="album-cover">
+                <h2>Saturday</h2>
+                <p>12:00am - Midnight Snack</p>
+                <p>2:00am - Activity</p>
+                <p>6:00am - Yoga</p>
+                <p>8:00am - Breakfast</p>
+                <p>11am-3pm - Workshops/Tech Talks</p>
+                <p>12:00pm - Lunch</p>
+                <p>3:00pm - Activity</p>
+                <p>6:00pm - Dinner</p>
+                <p>9:00pm - Activity</p>
+                <img src="images/vinyl.gif"/>
+              </div>
+            </div>
+            <div class="album" id="day3">
+              <div class="album-cover">
+                <h2>Sunday</h2>
+                <p>12:00am - Midnight Snack</p>
+                <p>7:00am - Breakfast</p>
+                <p>8:00am - Hacking Ends</p>
+                <p>9:00am - Workshop/Tech Talk</p>
+                <p>10:00am - Judging</p>
+                <p>12:00pm - Lunch + Dogs</p>
+                <p>1:30pm - Closing Ceremony</p>
+                <p>3:00pm - Buses Leave</p>
+                <img src="images/vinyl.gif"/>
+              </div>
+            </div>
+          </div>
+          <div class="controls">
+            <i onclick="schedulePrev();" class="fas fa-caret-left"></i>
+            <i onclick="scheduleNext();" class="fas fa-caret-right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="travelpage">
+      <div class="section">
+        <div class="travel-info">
+          <h1 class="section-title">Bus Routes</h1>
+          <div class="route-buttons">
+            <div class="route-button active" href="#missouri">
+              Missouri
+            </div>
+            <div class="route-button" href="#illinois">
+              Illinois
+            </div>
+            <div class="route-button" href="#kansas">
+              Kansas
+            </div>
+            <div class="route-button" href="#iowa">
+              Iowa
+            </div>
+          </div>
+          <div class="routes-container">
+            <div class="route-tickets active" id="missouri">
+              <div class="route-ticket">
+                <h3 class="route-num">Route #1</h3>
+                <h3 class="route">Washington University in St. Louis (WUSTL)</h3>
+                <h3 class="route">University of Missouri in St. Louis (UMSL)</h3>
+                <div class="left-cutout"></div>
+                <div class="right-cutout"></div>
+              </div>
+              <div class="route-ticket">
+                <h3 class="route-num">Route #2</h3>
+                <h3 class="route">St. Louis Community College in Florissant Valley (STLCC)</h3>
+                <h3 class="route">Parkway Central High School (PCH)</h3>
+                <div class="left-cutout"></div>
+                <div class="right-cutout"></div>
+              </div>
+              <div class="route-ticket">
+                <h3 class="route-num">Route #5</h3>
+                <h3 class="route">Kansas State University (K-State)</h3>
+                <h3 class="route">University of Kansas (KU)</h3>
+                <h3 class="route">University of Missouri in Kansas City (UMKC)</h3>
+                <div class="left-cutout"></div>
+                <div class="right-cutout"></div>
+              </div>
+              <div class="route-ticket">
+                <h3 class="route-num">Route #6</h3>
+                <h3 class="route">Iowa State University (ISU)</h3>
+                <h3 class="route">University of Iowa (U of Iowa)</h3>
+                <h3 class="route">Truman State University (TSU)</h3>
+                <h3 class="route">University of Missouri in Columbia (Mizzou)</h3>
+                <div class="left-cutout"></div>
+                <div class="right-cutout"></div>
+              </div>
+            </div>
+            <div class="route-tickets" id="illinois">
+              <div class="route-ticket">
+                <h3 class="route-num">Route #3</h3>
+                <h3 class="route"> Purdue University (Purdue)</h3>
+                <h3 class="route">University of Illinois at Urbana-Champaign (UIUC)</h3>
+                <div class="left-cutout"></div>
+                <div class="right-cutout"></div>
+              </div>
+              <div class="route-ticket">
+                <h3 class="route-num">Route #4</h3>
+                <h3 class="route">Illinois Institute of Technology (IIT)</h3>
+                <div class="left-cutout"></div>
+                <div class="right-cutout"></div>
+              </div>
+            </div>
+            <div class="route-tickets" id="kansas">
+              <div class="route-ticket">
+                <h3 class="route-num">Route #5</h3>
+                <h3 class="route">Kansas State University (K-State)</h3>
+                <h3 class="route">University of Kansas (KU)</h3>
+                <h3 class="route">University of Missouri in Kansas City (UMKC)</h3>
+                <div class="left-cutout"></div>
+                <div class="right-cutout"></div>
+              </div>
+            </div>
+            <div class="route-tickets" id="iowa">
+              <div class="route-ticket">
+                <h3 class="route-num">Route #6</h3>
+                <h3 class="route">Iowa State University (ISU)</h3>
+                <h3 class="route">University of Iowa (U of Iowa)</h3>
+                <h3 class="route">Truman State University (TSU)</h3>
+                <h3 class="route">University of Missouri in Columbia (Mizzou)</h3>
+                <div class="left-cutout"></div>
+                <div class="right-cutout"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="prizespage">
+      <div class="section">
+        <div class="prizes-info">
+          <h1 class="section-title">Prizes</h1>
+        </div>
+      </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="js/scrollie.js"></script>
+    <!-- <script src="js/scrollie.js"></script>
     <script type="text/javascript" src="js/scrolloverflow.min.js"></script>
-    <script type="text/javascript" src="js/fullpage.js"></script>
+    <script type="text/javascript" src="js/fullpage.js"></script> -->
     <script src="js/main.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->

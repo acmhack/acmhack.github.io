@@ -41,27 +41,35 @@ $(document).ready(function() {
 
     schedulePrev();
 
-    $('#fullpage').fullpage({
-		//options here
-        autoScrolling: true,
-        scrollOverflow: true,
-        normalScrollElements: '.faq-questions',
-        anchors: ['top','about-anchor','schedule-anchor','faq-anchor','sponsors-anchor'],
-        menu: '.navbar-nav',
-        verticalCentered: false,
-        scrollingSpeed: 700,
-        recordHistory: false,
-        paddingTop: '80px',
-        onLeave: function(origin, destination, direction) {
-            $('#fullpage > *').each((index, element) => {
-                $(element).css('opacity', 0);
-            });
+    // $(".page-switch").click(function(e) {
+    //     e.preventDefault();
 
-            setTimeout(function() { 
-                $('.fp-section.active').css('opacity', 1);
-            }, 300);
-        }
-	});
+    //     $("body > div").css("opacity", 0).css("z-index", -1);
+    //     $($(this).attr('href')).css("opacity", 1).css("z-index", 1);
+        
+    //     $(".page-switch").removeClass("active");
+    //     $(this).addClass("active");
+    // });
+
+    $(".route-button").click(function(e) {
+        e.preventDefault();
+
+        $(".route-tickets.active").removeClass("active");
+        $($(this).attr("href")).addClass("active");
+
+        $(".route-button").removeClass("active");
+        $(this).addClass("active");
+    });
+
+    $(".route-ticket").each(function(index) {
+        $(this).children(".left-cutout").css("width", $(this).height() / 2).css("height", $(this).height() / 2).css("top", "calc(50% - " + ($(this).height() / 4) + "px").css("left", $(this).height() / -4);
+
+        $(this).children(".right-cutout").css("width", $(this).height() / 2).css("height", $(this).height() / 2).css("top", "calc(50% - " + ($(this).height() / 4) + "px").css("right", $(this).height() / -4);
+    });
+
+    $(".corona .nav-link").click(function(e) {
+        e.preventDefault();
+    });
 
     for (i = 0; i < coll.length; i++) {
         coll[i].addEventListener("click", function() {
