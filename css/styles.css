@@ -11,6 +11,7 @@ body {
   color: white;
   overflow: hidden;
   position: relative;
+  z-index: 1;
 }
 
 body.corona {
@@ -24,11 +25,20 @@ body.corona {
   max-height: 100vh;
 }
 
-body > div {
+.corona-wrapper {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  z-index: 2;
+  overflow-y: scroll;
+}
+
+/* body > div {
   position: absolute;
   width: 100%;
   transition: opacity 0.2s linear;
-}
+} */
 
 .corona .nav-link:hover {
   cursor: not-allowed;
@@ -52,16 +62,15 @@ body > div {
 }
 
 #corona {
-  position: fixed;
+  position: relative;
   display: flex;
-  top: 15vh;
-  left: 22.5vw;
-  width: 55vw;
-  height: 70vh;
   background-color: rgba(0, 0, 0, 0.9);
   z-index: 1;
   padding: 6rem;
   font-family: 'Gotham-Medium', sans-serif;
+  /* min-height: 100%; */
+  width: 65vw;
+  margin: auto;
 }
 
 #corona > * {
@@ -85,9 +94,6 @@ body > div {
 @media (max-width: 1015px) {
   #corona {
     width: 80vw;
-    height: 75vh;
-    top: 12.5vh;
-    left: 10vw;
   }
 }
 
@@ -139,7 +145,7 @@ body > div {
 
 nav.navbar {
   width: 100%;
-  z-index: 2;
+  z-index: 1;
 }
 
 nav.navbar .container-fluid {
