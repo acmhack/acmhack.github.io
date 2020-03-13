@@ -85,6 +85,10 @@ body.corona {
   font-size: 16px;
 }
 
+#corona span {
+  text-transform: uppercase;
+}
+
 @media (max-width: 1400px) {
   #corona {
     padding: 3rem;
