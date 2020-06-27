@@ -200,7 +200,58 @@ nav.navbar .container-fluid {
   display: flex;
 }
 
-.landing-page-info a, .cast-info .button-container a {
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+::-ms-input-placeholder {
+  color: white;
+}
+
+:-ms-input-placeholder {
+  color: white;
+}
+
+::-moz-placeholder {
+  color: white;
+}
+
+::-webkit-input-placeholder {
+  color: white;
+}
+
+.landing-page-info form {
+  display: flex;
+  margin: 2.5rem auto 0 auto;
+}
+
+.landing-page-info .button-container button {
+  border: 1px solid #201F1F;
+  margin: 0;
+}
+
+.landing-page-info .button-container input {
+  background: none;
+  border-radius: 50px;
+  border: 1px solid black;
+  padding: 10px 55px;
+  font-size: 1.5rem;
+  margin-right: -4rem;
+  color: white;
+  padding-left: 30px;
+  padding-right: 70px;
+  transition: all 0.3s linear;
+}
+
+.landing-page-info .button-container input:focus {
+  outline: none;
+  border-color: white;
+}
+
+.landing-page-info a,
+.landing-page-info button,
+.cast-info .button-container a {
   font-size: 1.5rem;
   padding: 10px 55px;
   background-color: #201F1F;
@@ -211,13 +262,16 @@ nav.navbar .container-fluid {
   margin: 1rem auto 0 auto;
   text-decoration: none;
   transition: all 0.3s linear;
+  border: none;
 }
 
 .cast-info .members a {
   color: inherit;
 }
 
-.landing-page-info a:hover, .cast-info .button-container a:hover {
+.landing-page-info a:hover,
+.landing-page-info button:hover,
+.cast-info .button-container a:hover {
   background-color: white;
   color: #201F1F;
 }
