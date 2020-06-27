@@ -948,7 +948,9 @@ nav.navbar .container-fluid {
   #page-top h4,
   #page-top .button-container a,
   .faq-short-answer h1,
-  .cast-info .button-container a {
+  .cast-info .button-container a,
+  .landing-page-info .button-container button,
+  .landing-page-info .button-container input {
     font-size: 1.125rem;
   }
 
@@ -1040,7 +1042,9 @@ nav.navbar .container-fluid {
   #page-top h4,
   #page-top .button-container a,
   .faq-short-answer h1,
-  .cast-info .button-container a {
+  .cast-info .button-container a,
+  .landing-page-info .button-container button,
+  .landing-page-info .button-container input {
     font-size: 0.9rem;
   }
 
@@ -1108,8 +1112,20 @@ nav.navbar .container-fluid {
   #page-top h4,
   #page-top .button-container a,
   .faq-short-answer h1,
-  .cast-info .button-container a {
+  .cast-info .button-container a,
+  .landing-page-info .button-container button,
+  .landing-page-info .button-container input {
     font-size: 0.75rem;
+  }
+
+  .landing-page-info .button-container a,
+  .landing-page-info .button-container button {
+    padding: 10px 35px;
+  }
+
+  .landing-page-info .button-container input {
+    padding: 10px 55px;
+    padding-left: 15px;
   }
 
   #page-top h1,
@@ -1178,9 +1194,5 @@ nav.navbar .container-fluid {
 
   .landing-page-info .landing-page-about > * {
     margin-right: calc(0.7rem + 5.6px);
-  }
-
-  .landing-page-info .button-container a {
-    padding: 10px 35px;
   }
 }
