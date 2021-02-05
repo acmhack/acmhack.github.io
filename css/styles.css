@@ -48,7 +48,7 @@ body > div {
 
 nav.navbar {
 	width: 100%;
-	z-index: 99;
+	z-index: 98;
 }
 
 nav.navbar .container-fluid {
