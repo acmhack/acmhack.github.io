@@ -236,9 +236,10 @@ nav.navbar .container-fluid {
 
 .landing-page-info .button-container button {
   border: 1px solid #201f1f;
-  margin: 0;
 }
-
+.apply:hover {
+  color: #201f1f !important;
+}
 .landing-page-info .button-container input {
   background: none;
   border-radius: 50px;
@@ -262,11 +263,12 @@ nav.navbar .container-fluid {
 .cast-info .button-container a {
   font-size: 1.5rem;
   padding: 10px 55px;
-  background-color: #201f1f;
+  background-color: #40abd7;
   font-family: titling-gothic-fb, sans-serif;
   font-weight: 500;
   border-radius: 50px;
   color: white;
+  cursor: pointer;
   margin: 1rem auto 0 auto;
   text-decoration: none;
   transition: all 0.3s linear;
@@ -497,10 +499,6 @@ nav.navbar .container-fluid {
 .faq-long-answer.active {
   padding: 3px 18px;
   border: 3px solid #40abd7;
-}
-
-.faq-long-answer p {
-  margin-bottom: 0;
 }
 
 .controller {
