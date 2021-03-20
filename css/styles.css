@@ -40,7 +40,6 @@ body > div {
   margin: auto;
 }
 
-#schedulepage,
 #travelpage,
 #prizespage {
   opacity: 0;
@@ -329,6 +328,7 @@ nav.navbar .container-fluid {
 
 .schedule-info {
   width: 100%;
+  overflow: hidden;
   margin: auto;
 }
 
