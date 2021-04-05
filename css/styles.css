@@ -901,8 +901,11 @@ nav.navbar .container-fluid {
   nav .main-nav {
     display: flex;
     flex-direction: column;
-  }
 
+  }
+  .nav-item {
+    flex-direction: column;
+  }
   nav .main-nav li {
     margin: 0.25rem auto;
   }
