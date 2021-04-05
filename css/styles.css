@@ -60,6 +60,7 @@ nav.navbar .container-fluid {
   font-weight: 300;
   font-style: normal;
   font-size: 1.15rem;
+  flex-direction: column;
 }
 
 .nav-link {
@@ -317,7 +318,12 @@ nav.navbar .container-fluid {
 .about-info img {
   width: 750px;
 }
-
+.schedule-cdt {
+  text-align: center;
+  font-size: 20px;
+  margin-top: -40px;
+  padding-bottom: 10px;
+}
 .about-info .line {
   margin: 0.75rem 0;
 }
@@ -894,6 +900,7 @@ nav.navbar .container-fluid {
 @media (max-width: 991px) {
   nav .main-nav {
     display: flex;
+    flex-direction: column;
   }
 
   nav .main-nav li {
