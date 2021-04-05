@@ -60,7 +60,6 @@ nav.navbar .container-fluid {
   font-weight: 300;
   font-style: normal;
   font-size: 1.15rem;
-  flex-direction: column;
 }
 
 .nav-link {
@@ -902,7 +901,9 @@ nav.navbar .container-fluid {
     display: flex;
     flex-direction: column;
   }
-
+  .nav-item {
+    flex-direction: column;
+  }
   nav .main-nav li {
     margin: 0.25rem auto;
   }
