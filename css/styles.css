@@ -349,6 +349,7 @@ nav.navbar .container-fluid {
 .album {
   display: inline-block;
   margin: 0 131.25px;
+
   vertical-align: bottom;
 }
 
@@ -356,6 +357,7 @@ nav.navbar .container-fluid {
   width: 350px;
   height: 350px;
   background-color: black;
+  word-break: break-word !important;
   border-radius: 15px;
   position: relative;
   padding: 1rem;
