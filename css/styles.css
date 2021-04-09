@@ -235,6 +235,7 @@ nav.navbar .container-fluid {
 
 .landing-page-info .button-container button {
   border: 1px solid #201f1f;
+  margin: 0;
 }
 .apply:hover {
   color: #201f1f !important;
