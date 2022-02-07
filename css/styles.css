@@ -1192,7 +1192,37 @@ nav.navbar .container-fluid {
   }
 }
 
-@media (max-width: 372px) {
+.bart-fix {
+  font-size: 2rem;
+}
+
+.ugly-bart-fix-fix {
+  background-color: #40abd7;
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  padding: 20px;
+  border-radius: 30%;
+}
+@media (max-width: 800px) {
+  .ugly-bart-fix-fix {
+    width: 30%;
+    padding: 12px;
+    border-radius: 30%;
+  }
+  .bart-fix {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 410px) {
+  .ugly-bart-fix-fix {
+    width: 30%;
+    padding: 10px;
+    border-radius: 30%;
+  }
+  .bart-fix {
+    font-size: 1rem;
+  }
   .faq-short-answer h1 {
     font-size: 0.5rem;
   }
