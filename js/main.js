@@ -19,7 +19,8 @@ const linkedInMap = {
     "John A.": "https://www.linkedin.com/in/johnadamse/",
     "LanChau L.": "https://www.linkedin.com/in/lanchauletran/",
     "Jess L.": "https://www.linkedin.com/in/jessicatlam/",
-    "Josie G.": "https://www.linkedin.com/in/josie-glassman-a36516183/"
+    "Josie G.": "https://www.linkedin.com/in/josie-glassman-a36516183/",
+    "Eric D.": "https://youtu.be/GPplf2VD8MY" //hehe, I don't gotta linkedIn yet haha EDIT: wait what's this for it's used by nothing
 };
 var currentSlide = 2;
 var currentLeft = parseInt($('.schedule-slider').css('margin-left'));

@@ -11,8 +11,8 @@
 }
 
 body {
-  background: #171717;
-  color: white;
+  background: white;
+  color: wheat;
   position: relative;
   z-index: 1;
 }
