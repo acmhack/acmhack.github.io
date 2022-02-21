@@ -11,7 +11,7 @@
 }
 
 body {
-  background: #171717;
+  background: #f7cad0;
   color: white;
   position: relative;
   z-index: 1;
@@ -107,7 +107,7 @@ nav.navbar .container-fluid {
 .navbar-nav li:nth-child(2) a.active::after {
   content: "";
   float: left;
-  background: #5d5efe;
+  background: #ff477e;
   width: calc(100% - 1rem);
   height: 3px;
   border-radius: 3px;
@@ -120,7 +120,7 @@ nav.navbar .container-fluid {
 .navbar-nav li:nth-child(3) a.active::after {
   content: "";
   float: left;
-  background: #5efe00;
+  background: #ff0a54;
   width: calc(100% - 1rem);
   height: 3px;
   border-radius: 3px;
@@ -173,7 +173,7 @@ nav.navbar .container-fluid {
 }
 
 .landing-page-info .artpiece-border {
-  background-color: #201f1f;
+  background-color: #ff7096;
   border-radius: 15px;
   padding: 0.7rem;
   position: relative;
@@ -187,7 +187,7 @@ nav.navbar .container-fluid {
   margin: 0;
   position: absolute;
   transform: rotate(90deg);
-  color: #7a7a7a;
+  color: #ff7096;
   font-family: titling-gothic-fb-wide, sans-serif;
   font-size: 9px;
   bottom: 9rem;
@@ -234,11 +234,11 @@ nav.navbar .container-fluid {
 }
 
 .landing-page-info .button-container button {
-  border: 1px solid #201f1f;
+  border: 1px solid #ff7096;
   margin: 0;
 }
 .apply:hover {
-  color: #201f1f !important;
+  color: #ff7096 !important;
 }
 .landing-page-info .button-container input {
   background: none;
@@ -263,7 +263,7 @@ nav.navbar .container-fluid {
 .cast-info .button-container a {
   font-size: 1.5rem;
   padding: 10px 55px;
-  background-color: #40abd7;
+  background-color: #ff7096;
   font-family: titling-gothic-fb, sans-serif;
   font-weight: 500;
   border-radius: 50px;
@@ -283,7 +283,7 @@ nav.navbar .container-fluid {
 .landing-page-info button:hover,
 .cast-info .button-container a:hover {
   background-color: white;
-  color: #201f1f;
+  color: #ff7096;
 }
 
 .about-info {
@@ -308,7 +308,7 @@ nav.navbar .container-fluid {
 .overlay-text {
   position: absolute;
   bottom: 1rem;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: #ff99ac;
   width: 80%;
   text-align: center;
   padding: 0.5rem 1rem;
@@ -357,7 +357,7 @@ nav.navbar .container-fluid {
 .album-cover {
   width: 350px;
   height: 350px;
-  background-color: black;
+  background-color: ff7096;
   word-break: break-word !important;
   border-radius: 15px;
   position: relative;
@@ -417,11 +417,11 @@ nav.navbar .container-fluid {
 }
 
 .faq-question {
-  background-color: rgba(27, 27, 27, 1);
+  background-color: #ff99ac;
   border-radius: 5px;
   padding: 0.5rem 2rem;
   position: relative;
-  color: #a0a0a0;
+  color: #ff0a54;
   cursor: pointer;
   z-index: 1;
   transition: all 0.3s linear;
@@ -429,7 +429,7 @@ nav.navbar .container-fluid {
 
 .faq-question.active,
 .faq-question:hover {
-  background-color: #3da4cf;
+  background-color: #ff477e;
   color: white;
 }
 
@@ -450,7 +450,7 @@ nav.navbar .container-fluid {
 .faq-short-answer {
   width: 50%;
   height: 100%;
-  background-color: #aaaeb0;
+  background-color: #ff99ac;
   display: flex;
   position: absolute;
   right: 0;
@@ -470,7 +470,7 @@ nav.navbar .container-fluid {
   top: 0;
   left: -2.33rem;
   z-index: -1;
-  background-color: #aaaeb0;
+  background-color: #ff99ac;
   transform-origin: bottom left;
   -ms-transform: skew(-30deg, 0deg);
   -webkit-transform: skew(-30deg, 0deg);
@@ -487,7 +487,7 @@ nav.navbar .container-fluid {
 }
 
 .faq-short-answer h1 {
-  color: #252525;
+  color: #ff0a54;
   margin: auto;
   font-size: 1.5rem;
 }
@@ -497,7 +497,7 @@ nav.navbar .container-fluid {
   overflow: hidden;
   background: #ffffff;
   border-radius: 5px;
-  color: black;
+  color: #ff0a54;
   font-family: "Montserrat", sans-serif;
   transition: all 0.3s ease-out;
   padding: 0 18px;
@@ -506,7 +506,7 @@ nav.navbar .container-fluid {
 
 .faq-long-answer.active {
   padding: 3px 18px;
-  border: 3px solid #40abd7;
+  border: 3px solid #ff0a54;
 }
 
 .controller {
@@ -1197,7 +1197,7 @@ nav.navbar .container-fluid {
 }
 
 .ugly-bart-fix-fix {
-  background-color: #40abd7;
+  background-color: #ff5c8a;
   display: flex;
   justify-content: center;
   width: 40%;
