@@ -5,13 +5,6 @@
 [View Live](https://mstacm.org) |
 
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-
-
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
