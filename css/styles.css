@@ -1202,8 +1202,31 @@ nav.navbar .container-fluid {
   justify-content: center;
   width: 40%;
   padding: 20px;
+  text-decoration: none;
   border-radius: 30%;
+  color: white;
+  text-align: center;
 }
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+a:active {
+  text-decoration: none;
+  color: white;
+}
+
 @media (max-width: 800px) {
   .ugly-bart-fix-fix {
     width: 30%;
