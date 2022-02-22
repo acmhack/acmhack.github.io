@@ -76,38 +76,13 @@ We use a pattern known as [Github Flow](https://guides.github.com/introduction/f
     git add file1 file2 ... # only add relevant files
     git commit -m 'Add some great specific and well described features' # After the "-m" goes the commit message
     ```
-    > Read [this article about good commit messages](https://chris.beams.io/posts/git-commit/) to maintain good quality commits
+    > Read [this article about good commit messages] to maintain good quality commits
 4. Push to the remote branch
     ```bash
     git push origin feature/<feature-name>
     ```
-5. [Open a Pull Request on Github](https://github.com/sigdotcom/mstacm.org/compare)
+5. [Open a Pull Request on Github]
 6. Grab a new issue to work on and start from the top!
-
-### Outside Contributors
-1. Fork the mstacm.org repository
-2. Create your branch
-    ```bash
-    git switch -c feature/<feature-name>
-    ```
-    > where <feature-name> is replaced with a short description of
-    your feature (ex. admin-permission-tool for a feature adding a new tool to admin-web)
-
-    Name your commits with `feature/` or `hotfix/` at the beginning depending on the content of the branch. (ex. `feature/new-icons`, `hotfix/icon-render-glitch`)
-  
-3. Add and commit your Changes 
-    ```bash
-    git add file1 file2 ... # only add relevant files
-    git commit -m 'Add some great specific and well described features' # After the "-m" goes the commit message
-    ```
-    > Read [this article about good commit messages](https://chris.beams.io/posts/git-commit/) to maintain good quality commits
-4. Push to the remote branch
-    ```bash
-    git push origin feature/<feature-name>
-    ```
-5. [Open a Pull Request on Github](https://github.com/sigdotcom/mstacm.org/compare)
-6. Grab a new issue to work on and start from the top!
-
 
 
 <!-- LICENSE -->
