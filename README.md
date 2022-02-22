@@ -84,6 +84,10 @@ We use a pattern known as [Github Flow](https://guides.github.com/introduction/f
 5. [Open a Pull Request on Github]
 6. Grab a new issue to work on and start from the top!
 
+<!-- Branch Rules --> 
+## Editing Branch Rules
+A branch rule must have the same name as a branch in order for it to work correctly.
+
 
 <!-- LICENSE -->
 ## License
